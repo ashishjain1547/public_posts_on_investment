@@ -1,0 +1,126 @@
+1. Wall Street
+
+	Wall Street is a street in New York where the Stock Exchange and important banks are. Wall Street is often used to refer to the financial business carried out there and to the people who work there. 
+
+2. Dow Jones Industrial Average
+
+	The Dow Jones Industrial Average (DJIA) is an index that tracks 30 large, publicly-owned blue chip companies trading on the New York Stock Exchange (NYSE) and the NASDAQ. The Dow Jones is named after Charles Dow, who created the index back in 1896, along with his business partner Edward Jones.
+	
+3. S&P 500
+
+	The S&P 500 is a stock market index that tracks the stocks of 500 large-cap U.S. companies. It represents the stock market's performance by reporting the risks and returns of the biggest companies. Investors use it as the benchmark of the overall market, to which all other investments are compared.
+	
+4. Dalal Street
+
+	Dalal Street in downtown Mumbai, Maharashtra, India, is the address of the Bombay Stock Exchange and several related financial firms and institutions. When Bombay Stock Exchange was moved to this new location at the intersection of Bombay Samāchār Marg and Hammam Street, the street next to the building was renamed as Dalal Street. (Ref 4)
+
+5. NIFTY 50
+
+	The NIFTY 50 index National Stock Exchange of India's benchmark broad based stock market index for the Indian equity market. Full form of NIFTY is National Index Fifty. It represents the weighted average of 50 Indian company stocks in 13 sectors and is one of the two main stock indices used in India, the other being the BSE Sensex.
+
+	Nifty is owned and managed by India Index Services and Products (IISL), which is a wholly owned subsidiary of the NSE Strategic Investment Corporation Limited. IISL had a marketing and licensing agreement with Standard & Poor's for co-branding equity indices until 2013. The Nifty 50 was launched 1 April 1996, and is one of the many stock indices of Nifty.
+
+	NIFTY 50 Index has shaped up as a largest single financial product in India, with an ecosystem comprising: exchange-traded funds (onshore and offshore), exchange-traded options at the NSE in India, and futures and options abroad at the SGX. NIFTY 50 is the world's most actively trade contract. WFE, IOMA and FIA surveys endorse NSE's leadership position.
+
+	The NIFTY 50 covers 13 sectors (as of 31 October 2019) of the Indian economy and offers investment managers exposure to the Indian market in one portfolio. During 2008–12, NIFTY 50 Index share of NSE market capitalisation fell from 65% to 29% due to the rise of sectoral indices like NIFTY Bank, NIFTY IT, NIFTY Pharma, NIFTY SERV SECTOR, NIFTY Next 50, etc. The NIFTY 50 Index gives weightage of 39.47% to financial services, 15.31% to Energy, 13.01% to IT, 12.38% to Consumer Goods, 6.11 to Automobile and nil to agricultural sector.
+
+	The NIFTY 50 index is a free float market capitalisation weighted index. The index was initially calculated on full market capitalisation methodology. From 26 June 2009, the computation was changed to a free-float methodology. The base period for the CNX Nifty index is 3 November 1995, which marked the completion of one year of operations of National Stock Exchange Equity Market Segment. The base value of the index has been set at 1000 and a base capital of Rs 2.06 trillion. In February 2019, Britannia Industries entered into Nifty 50 by replacing Hindustan Petroleum Corporation Ltd [Ref 5A]. HPCL will move into Nifty Next 50 From 27 September, Nestle India will be included in NSE Nifty 50 Index and Nifty 50 Equal Weight Index. It will be replacing Indiabulls Housing Finance Ltd [Ref 5B]. (Ref 5)
+
+6. Sensex
+
+	The BSE SENSEX (also known as the S&P Bombay Stock Exchange or Sensitive Index or simply the SENSEX) is a free-float market-weighted stock market index of 30 well-established and financially sound companies listed on Bombay Stock Exchange. These 30 companies are known as Blue chip companies. The 30 component companies which are some of the largest and most actively traded stocks, are representative of various industrial sectors of the Indian economy. Published since 1 January 1986, the S&P BSE SENSEX is regarded as the pulse of the domestic stock markets in India. The base value of the SENSEX was taken as 100 on 1 April 1979 and its base year as 1978–79. On 25 July 2001 BSE launched DOLLEX-30, a dollar-linked version of the SENSEX.
+
+	As of 07 February 2020, the full market capitalisation of SENSEX was about ₹76,112.3149 billion (US$1 trillion) (37% of GDP) while its free-float market capitalisation was ₹43,272.7852 billion (US$607 billion). During 2008–12, Sensex 30 Index share of BSE market capitalisation fell from 49% to 25% due to the rise of sectoral indices like BSE PSU, Bankex and BSE-TECk. (Ref 6)
+
+7. Bombay Stock Exchange
+
+	The Bombay Stock Exchange (BSE) is an Indian stock exchange located at Dalal Street, Mumbai.
+
+	Established in 1875, the BSE (formally known as Bombay Stock Exchange Ltd.) is Asia's oldest stock exchange. The BSE is the world's 10th largest stock exchange with an overall market capitalization of more than $2.2 trillion on as of April 2018.
+
+8. Securities and Exchange Board of India
+
+	The Securities and Exchange Board of India (SEBI) is the regulator of the securities and commodity market in India owned by the Government of India.
+	
+	Securities and Exchange Board of India (SEBI) was first established in 1988 as a non-statutory body for regulating the securities market. It became an autonomous body on 12 April 1992 and was accorded statutory powers with the passing of the SEBI Act 1992 by the Indian Parliament. Soon SEBI was constituted as the regulator of capital markets in India under a resolution of the Government of India. SEBI has its headquarters at the business district of Bandra Kurla Complex in Mumbai and has Northern, Eastern, Southern and Western Regional Offices in New Delhi, Kolkata, Chennai, and Ahmedabad respectively. It has opened local offices at Jaipur and Bangalore and has also opened offices at Guwahati, Bhubaneshwar, Patna, Kochi and Chandigarh in Financial Year 2013 - 2014.
+
+	Controller of Capital Issues was the regulatory authority before SEBI came into existence; it derived authority from the Capital Issues (Control) Act, 1947.
+
+	The SEBI is managed by its members, which consists of the following:
+
+	The chairman is nominated by the Union Government of India.
+	Two members, i.e., Officers from the Union Finance Ministry (India).
+	One member from the Reserve Bank of India.
+	The remaining five members are nominated by the Union Government of India, out of them at least three shall be whole-time members.
+	
+9. Bargain Purchase
+
+	A bargain purchase involves assets acquired for less than fair market value. In a bargain purchase business combination, a corporate entity is acquired by another for an amount that is less than the fair market value of its net assets.
+
+10. Bond
+
+	In finance, a bond is an instrument of indebtedness of the bond issuer to the holders. The most common types of bonds include municipal bonds and corporate bonds.
+
+	The bond is a debt security, under which the issuer owes the holders a debt and (depending on the terms of the bond) is obliged to pay them interest (the coupon) or to repay the principal at a later date, termed the maturity date. Interest is usually payable at fixed intervals (semiannual, annual, sometimes monthly). Very often the bond is negotiable, that is, the ownership of the instrument can be transferred in the secondary market. This means that once the transfer agents at the bank medallion stamp the bond, it is highly liquid on the secondary market.
+
+	Thus a bond is a form of loan or IOU: the holder of the bond is the lender (creditor), the issuer of the bond is the borrower (debtor), and the coupon is the interest. Bonds provide the borrower with external funds to finance long-term investments, or, in the case of government bonds, to finance current expenditure. Certificates of deposit (CDs) or short-term commercial paper are considered to be money market instruments and not bonds: the main difference is the length of the term of the instrument.
+
+	Bonds and stocks are both securities, but the major difference between the two is that (capital) stockholders have an equity stake in a company (that is, they are owners), whereas bondholders have a creditor stake in the company (that is, they are lenders). Being a creditor, bondholders have priority over stockholders. This means they will be repaid in advance of stockholders, but will rank behind secured creditors, in the event of bankruptcy. Another difference is that bonds usually have a defined term, or maturity, after which the bond is redeemed, whereas stocks typically remain outstanding indefinitely. An exception is an irredeemable bond, such as a consol, which is a perpetuity, that is, a bond with no maturity.
+
+	A bond’s “coupon” is its interest rate; a “low-coupon” bond pays a rate of interest income below the market average.
+
+11. Preferred Stock
+
+	noun; NORTH AMERICAN
+	stock that entitles the holder to a fixed dividend, whose payment takes priority over that of ordinary share dividends.
+
+12. NIFTY VIX
+
+	India VIX - What is India VIX?
+	VIX aka Volatility index is an index used to measure the near term volatility expectations of the markets. VIX is also a trademark of Chicago Board Options Exchange (CBOE), who introduced volatility as an asset class in the form of an index in 1993. Post its launch and immense popularity over the years, CBOE in 2004 introduced VIX derivative (F&O) trading.
+
+	Volatility index and Market index are completely different. While market index measures the direction of the market and calculated by the price movements of the underlying stocks, Volatility Index measures the volatility of the market and is calculated using the order book of the underlying index’s options. Another difference is that market index value is a number whereas the volatility index is an annualized percentage. The volatility index based on the order books of Nifty opinions is known as India VIX. (Ref 11)
+
+13. NASDAQ
+
+	The Nasdaq Stock Market, also known as Nasdaq, is an American stock exchange located at One Liberty Plaza in New York City. It is ranked second on the list of stock exchanges by market capitalization of shares traded, behind only the New York Stock Exchange.[2] The exchange platform is owned by Nasdaq, Inc.,[3] which also owns the Nasdaq Nordic stock market network and several U.S. stock and options exchanges.
+
+	Type: Stock exchange
+	Location: One Liberty Plaza, 165 Broadway, Manhattan, New York City, New York, U.S.
+	Founded: February 4, 1971
+	Owner: Nasdaq, Inc.
+	Currency: United States dollar
+	No. of listings: Approximately 3,500
+	Market cap: Increase $10 trillion
+	Website: business.nasdaq.com [Ref 12]
+	
+14. Dow Theory
+
+	The Dow theory is a theory that says the market is in an upward trend if one of its averages (industrial or transportation) advances above a previous important high and is accompanied or followed by a similar advance in the other average. For example, if the Dow Jones Industrial Average (DJIA) climbs to an intermediate high, the Dow Jones Transportation Average (DJTA) is expected to follow suit within a reasonable period of time. (Ref 13)
+	
+Ref 1: https://www.collinsdictionary.com/dictionary/english/wall-street
+Ref 2: https://www.investopedia.com/terms/d/djia.asp
+Ref 3: https://www.thebalance.com/what-is-the-sandp-500-3305888
+Ref 4: https://en.wikipedia.org/wiki/Dalal_Street
+Ref 5: https://en.wikipedia.org/wiki/NIFTY_50
+
+Ref 5A: <a href="https://www.livemint.com/market/stock-market-news/britannia-to-replace-hindustan-petroleum-in-nifty-50-from-29-march-1551116705011.html" target="_blank">Britannia to replace Hindustan Petroleum in Nifty 50 from 29 March 2019</a>
+
+Ref 5B: <a href="https://www.livemint.com/market/stock-market-news/nestle-india-to-be-included-in-nse-nifty-50-index-1566995646655.html" target="_blank">Nestle India to be included in NSE Nifty 50 Index (Sep 2019)</a>
+
+Ref 6: https://en.wikipedia.org/wiki/BSE_SENSEX
+
+Ref 7: https://en.wikipedia.org/wiki/Bombay_Stock_Exchange
+
+Ref 8: https://en.wikipedia.org/wiki/Securities_and_Exchange_Board_of_India
+
+Ref 9: https://www.investopedia.com/terms/b/bargain-purchase.asp
+
+Ref 10: https://en.wikipedia.org/wiki/Bond_(finance)
+
+Ref 11: https://www.karvyonline.com/knowledge-center/beginner/india-vix
+
+Ref 12: https://en.wikipedia.org/wiki/Nasdaq
+
+Ref 13: https://www.investopedia.com/terms/d/dowtheory.asp
+

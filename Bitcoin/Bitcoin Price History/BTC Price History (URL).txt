@@ -1,0 +1,5 @@
+https://in.investing.com/currencies/btc-usd-historical-data
+
+Sample data from website:
+Date 			Price 		Open 		High 		Low 		Vol. 	Change %
+Jan 21, 2018 	11,704.0 	12,732.0 	12,732.0 	11,630.0 	46.09K 	-8.05%
