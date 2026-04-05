@@ -1,0 +1,1035 @@
+<head>
+  <script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+  <!-- Google AdSense Using Machine Learning Code -->
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: "ca-pub-3071098372371409",
+      enable_page_level_ads: true
+    });
+  </script>
+
+  <script>
+    $(document).ready(function () {
+      $.ajax({
+        url: "https://raw.githubusercontent.com/ashishjain1547/public_posts_on_investment/refs/heads/main/links_to_clubs.json",
+        success: function (result) {
+          let grouplink = JSON.parse(result)['current club'];
+          $("#customWhatsAppGroupLinkWrapper").html(
+            `
+                        <h2 class="custom_link_h2"><a href="${grouplink}" target="_blank"> 
+                            <span>Join us on:</span>
+                            <span class="customLink"><i class="fa fa-whatsapp"></i> Whatsapp </span>
+                            </a>
+                        </h2>
+                        `
+          );
+        }
+      });
+    });
+  </script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+    pre {
+      white-space: pre-wrap;
+      white-space: -moz-pre-wrap;
+      white-space: -pre-wrap;
+      white-space: -o-pre-wrap;
+      word-wrap: break-word;
+    }
+
+    .customLink {
+      background-color: #4CAF50;
+      border: none;
+      color: white !important;
+      padding: 8px 13px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 14px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+
+    .customLink:hover {
+      text-decoration: none;
+    }
+
+    div.code-block-decoration.footer {
+      display: none;
+    }
+
+    button.export-sheets-button-wrapper {
+      display: none;
+    }
+  </style>
+
+  <style>
+    .custom_link_h2 a {
+      color: black;
+      text-decoration: none;
+      text-align: center;
+    }
+
+    .custom_link_h2 a:hover {
+      color: black;
+    }
+
+    .custom_link_h2 a:active {
+      color: black;
+    }
+
+    .custom_link_h2 span {
+      translate: 0px -5px;
+      display: inline-block;
+    }
+
+    .custom_link_h2 img {
+      width: 100px;
+      padding: 0px;
+      border: none;
+      box-shadow: none;
+    }
+
+    .customul {
+      list-style: none;
+    }
+
+    [aria-hidden='true'] {
+      display: none;
+    }
+  </style>
+
+  <style>
+    pre {
+      white-space: pre-wrap;
+      white-space: -moz-pre-wrap;
+      white-space: -pre-wrap;
+      white-space: -o-pre-wrap;
+      word-wrap: break-word;
+    }
+
+    .dot {
+      height: 12px;
+      width: 12px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    .arrow {
+      border: solid black;
+      border-width: 0 3px 3px 0;
+      display: inline-block;
+      padding: 3px;
+    }
+
+    .right {
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+    }
+
+    .left {
+      transform: rotate(135deg);
+      -webkit-transform: rotate(135deg);
+    }
+
+    .up {
+      transform: rotate(-135deg);
+      -webkit-transform: rotate(-135deg);
+    }
+
+    .down {
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+    }
+
+    .custom_iframe {
+      width: 100%;
+      height: 305px;
+    }
+  </style>
+
+<style>
+  /* ─── Reset ─────────────────────────────────────────────────────── */
+  div.customOuterWrapper *,
+  div.customOuterWrapper *::before,
+  div.customOuterWrapper *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* ─── Outer Wrapper ──────────────────────────────────────────────── */
+  div.customOuterWrapper {
+    --clr-bg: #0d1117;
+    --clr-surface: #141b26;
+    --clr-border: #1e2d42;
+    --clr-gold: #c9a84c;
+    --clr-gold-light: #e4c97e;
+    --clr-amber: #f0a500;
+    --clr-text: #d4dce8;
+    --clr-muted: #7a8fa6;
+    --clr-heading: #eef2f7;
+    --clr-accent-red: #c0392b;
+
+    font-family: 'Source Serif 4', Georgia, serif;
+    background-color: var(--clr-bg);
+    color: var(--clr-text);
+    line-height: 1.8;
+    font-size: 18px;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+  }
+
+  /* ─── Hero ───────────────────────────────────────────────────────── */
+  div.customOuterWrapper .hero {
+    position: relative;
+    padding: 80px 24px 60px;
+    max-width: 820px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  div.customOuterWrapper .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--clr-gold), var(--clr-amber), transparent);
+  }
+
+  div.customOuterWrapper .hero-eyebrow {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--clr-gold);
+    margin-bottom: 22px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  div.customOuterWrapper .hero-eyebrow::after {
+    content: '';
+    flex: 1;
+    max-width: 60px;
+    height: 1px;
+    background: var(--clr-gold);
+    opacity: 0.5;
+  }
+
+  div.customOuterWrapper .hero h1 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(38px, 6vw, 64px);
+    font-weight: 900;
+    color: var(--clr-heading);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    margin-bottom: 24px;
+  }
+
+  div.customOuterWrapper .hero h1 em {
+    color: var(--clr-gold);
+    font-style: italic;
+  }
+
+  div.customOuterWrapper .hero-sub {
+    font-size: 19px;
+    color: var(--clr-muted);
+    font-weight: 300;
+    max-width: 600px;
+    line-height: 1.6;
+    margin-bottom: 32px;
+  }
+
+  div.customOuterWrapper .hero-meta {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    color: var(--clr-muted);
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding-top: 24px;
+    border-top: 1px solid var(--clr-border);
+  }
+
+  div.customOuterWrapper .hero-meta span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  /* ─── Stat Bar ───────────────────────────────────────────────────── */
+  div.customOuterWrapper .stat-bar {
+    background: var(--clr-surface);
+    border-top: 1px solid var(--clr-border);
+    border-bottom: 1px solid var(--clr-border);
+    padding: 28px 24px;
+  }
+
+  div.customOuterWrapper .stat-bar-inner {
+    max-width: 820px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 24px;
+  }
+
+  div.customOuterWrapper .stat-item {
+    text-align: center;
+    padding: 16px;
+    border: 1px solid var(--clr-border);
+    border-radius: 4px;
+    background: rgba(201, 168, 76, 0.04);
+    transition: border-color 0.3s;
+  }
+
+  div.customOuterWrapper .stat-item:hover {
+    border-color: var(--clr-gold);
+  }
+
+  div.customOuterWrapper .stat-value {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--clr-gold-light);
+    display: block;
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+
+  div.customOuterWrapper .stat-value.red {
+    color: #e05252;
+  }
+
+  div.customOuterWrapper .stat-label {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--clr-muted);
+  }
+
+  /* ─── Article Body ───────────────────────────────────────────────── */
+  div.customOuterWrapper .article-body {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 60px 24px;
+  }
+
+  /* ─── Section Heading ────────────────────────────────────────────── */
+  div.customOuterWrapper .section-heading {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--clr-heading);
+    margin: 56px 0 20px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--clr-border);
+    position: relative;
+  }
+
+  div.customOuterWrapper .section-heading::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 48px;
+    height: 2px;
+    background: var(--clr-gold);
+  }
+
+  /* ─── Paragraphs ─────────────────────────────────────────────────── */
+  div.customOuterWrapper .article-body p {
+    margin-bottom: 22px;
+    color: var(--clr-text);
+  }
+
+  /* ─── Pull Quote ─────────────────────────────────────────────────── */
+  div.customOuterWrapper .pull-quote {
+    border-left: 3px solid var(--clr-gold);
+    margin: 40px 0;
+    padding: 20px 28px;
+    background: var(--clr-surface);
+    border-radius: 0 4px 4px 0;
+  }
+
+  div.customOuterWrapper .pull-quote p {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 400;
+    color: var(--clr-gold-light);
+    line-height: 1.6;
+    margin-bottom: 10px !important;
+  }
+
+  div.customOuterWrapper .pull-quote cite {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--clr-muted);
+    font-style: normal;
+  }
+
+  /* ─── Info Box ───────────────────────────────────────────────────── */
+  div.customOuterWrapper .info-box {
+    background: var(--clr-surface);
+    border: 1px solid var(--clr-border);
+    border-radius: 6px;
+    padding: 28px 32px;
+    margin: 36px 0;
+  }
+
+  div.customOuterWrapper .info-box-title {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--clr-gold);
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  div.customOuterWrapper .info-box-title::before {
+    content: '◆';
+    font-size: 8px;
+  }
+
+  div.customOuterWrapper .info-box p {
+    font-size: 16px;
+    margin-bottom: 12px !important;
+    color: var(--clr-text);
+  }
+
+  div.customOuterWrapper .info-box p:last-child {
+    margin-bottom: 0 !important;
+  }
+
+  /* ─── Comparison Grid ────────────────────────────────────────────── */
+  div.customOuterWrapper .compare-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 36px 0;
+  }
+
+  div.customOuterWrapper .compare-card {
+    background: var(--clr-surface);
+    border: 1px solid var(--clr-border);
+    border-radius: 6px;
+    padding: 22px 24px;
+  }
+
+  div.customOuterWrapper .compare-card.good {
+    border-top: 2px solid var(--clr-gold);
+  }
+
+  div.customOuterWrapper .compare-card.bad {
+    border-top: 2px solid #e05252;
+  }
+
+  div.customOuterWrapper .compare-card-title {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+
+  div.customOuterWrapper .compare-card.good .compare-card-title {
+    color: var(--clr-gold);
+  }
+
+  div.customOuterWrapper .compare-card.bad .compare-card-title {
+    color: #e05252;
+  }
+
+  div.customOuterWrapper .compare-card p {
+    font-size: 15px;
+    line-height: 1.65;
+    color: var(--clr-text);
+    margin-bottom: 0 !important;
+  }
+
+  /* ─── NIM Flow ───────────────────────────────────────────────────── */
+  div.customOuterWrapper .nim-flow {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    margin: 36px 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  div.customOuterWrapper .nim-node {
+    background: var(--clr-surface);
+    border: 1px solid var(--clr-border);
+    border-radius: 6px;
+    padding: 18px 22px;
+    text-align: center;
+    flex: 1;
+    min-width: 130px;
+  }
+
+  div.customOuterWrapper .nim-node-value {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 700;
+    display: block;
+  }
+
+  div.customOuterWrapper .nim-node-label {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--clr-muted);
+    margin-top: 4px;
+    display: block;
+  }
+
+  div.customOuterWrapper .nim-node.high .nim-node-value {
+    color: var(--clr-gold-light);
+  }
+
+  div.customOuterWrapper .nim-node.low .nim-node-value {
+    color: #e05252;
+  }
+
+  div.customOuterWrapper .nim-arrow {
+    font-size: 22px;
+    color: var(--clr-muted);
+    padding: 0 8px;
+    flex-shrink: 0;
+  }
+
+  /* ─── Conclusion ─────────────────────────────────────────────────── */
+  div.customOuterWrapper .conclusion-box {
+    background: var(--clr-surface);
+    border: 1px solid var(--clr-border);
+    border-radius: 8px;
+    padding: 36px 40px;
+    margin: 48px 0 0;
+  }
+
+  div.customOuterWrapper .conclusion-box h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--clr-heading);
+    margin-bottom: 24px;
+  }
+
+  div.customOuterWrapper .conclusion-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  div.customOuterWrapper .conclusion-list li {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--clr-border);
+    font-size: 16px;
+    line-height: 1.65;
+  }
+
+  div.customOuterWrapper .conclusion-list li:last-child {
+    border-bottom: none;
+  }
+
+  div.customOuterWrapper .conclusion-list li::before {
+    content: '#';
+    color: var(--clr-gold);
+    font-weight: 700;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  /* ─── References ─────────────────────────────────────────────────── */
+  div.customOuterWrapper .references {
+    padding: 48px 24px 60px;
+    max-width: 820px;
+    margin: 0 auto;
+    border-top: 1px solid var(--clr-border);
+  }
+
+  div.customOuterWrapper .references h3 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--clr-gold);
+    margin-bottom: 20px;
+  }
+
+  div.customOuterWrapper .ref-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  div.customOuterWrapper .ref-list li {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    color: var(--clr-muted);
+    padding: 10px 0;
+    border-bottom: 1px solid var(--clr-border);
+    line-height: 1.6;
+    display: flex;
+    gap: 10px;
+  }
+
+  div.customOuterWrapper .ref-list li::before {
+    content: attr(data-num);
+    color: var(--clr-gold);
+    font-weight: 500;
+    flex-shrink: 0;
+  }
+
+  div.customOuterWrapper .ref-list li:last-child {
+    border-bottom: none;
+  }
+
+  /* ─── Highlighted Inline ─────────────────────────────────────────── */
+  div.customOuterWrapper .highlight {
+    color: var(--clr-gold-light);
+    font-weight: 400;
+  }
+
+  div.customOuterWrapper .highlight-red {
+    color: #e05252;
+    font-weight: 400;
+  }
+
+  /* ─── Mobile ─────────────────────────────────────────────────────── */
+  @media (max-width: 600px) {
+    div.customOuterWrapper .compare-grid {
+      grid-template-columns: 1fr;
+    }
+
+    div.customOuterWrapper .nim-flow {
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    div.customOuterWrapper .nim-arrow {
+      transform: rotate(90deg);
+    }
+
+    div.customOuterWrapper .conclusion-box {
+      padding: 24px 20px;
+    }
+  }
+</style>
+
+</head>
+<div id="customWhatsAppGroupLinkWrapper"></div>
+<br>
+<a class="customLink" href="https://survival8.blogspot.com/2025/05/lessons-in-investing.html" target="_blank">Lessons in
+  Investing</a> &nbsp;&nbsp; <a href="https://survival8.blogspot.com/2025/05/lessons-in-investing.html#customBankingHeader" target="_blank" class="customLink">Other Articles on Banking</a> &nbsp;&nbsp; <a href="https://survival8.blogspot.com/2026/03/compare-icici-prudential-short-term.html"
+  target="_blank" class="customLink">&lt;&lt;&lt; Previously</a> <!-- &nbsp;&nbsp; <a href="" target="_blank" class="customLink">Next &gt;&gt;&gt;</a> -->
+<br>
+
+<div class="separator" style="clear: both;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFWFCj6s0YYdemKbSlKo0uqsvOoY1INxamHbjTv7IYrSpQ9VloKxCv3xpa_AdxVtRm5gD0__jzI6yGGeSPssI6Nzcw4n7hLG1cuDGxXgC2HYaaDbR4j_S8ytETBBI71GvwrWml7Le_JEE8lV9-V1ldlYUvGi81MNwqLOTNWoHac96NzdPiUOZPd26FAkct/s600/hdfc.png" style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" width="600" data-original-height="340" data-original-width="600" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFWFCj6s0YYdemKbSlKo0uqsvOoY1INxamHbjTv7IYrSpQ9VloKxCv3xpa_AdxVtRm5gD0__jzI6yGGeSPssI6Nzcw4n7hLG1cuDGxXgC2HYaaDbR4j_S8ytETBBI71GvwrWml7Le_JEE8lV9-V1ldlYUvGi81MNwqLOTNWoHac96NzdPiUOZPd26FAkct/s600/hdfc.png"/></a></div>
+
+
+<br>
+
+<iframe class="custom_iframe" src="https://www.youtube.com/embed/j7r48iIzwpE" title="What Exactly is Happening With HDFC Bank? | Explained" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<br>
+
+<div class="customOuterWrapper">
+
+  <!-- ── HERO ─────────────────────────────────────────────────────── -->
+  <header class="hero">
+    <p class="hero-eyebrow">Banking &amp; Finance · India</p>
+    <h1>HDFC Bank:<br /><em>Inside the Storm</em></h1>
+    <p class="hero-sub">
+      A chairman's cryptic resignation, a billion-dollar AT1 bond scandal, and a landmark merger
+      that quietly compressed the bank's profitability — three fault lines converging at the worst
+      possible moment.
+    </p>
+    <div class="hero-meta">
+      <span>📅 March–April 2026</span>
+      <span>⏱ 10 min read</span>
+      <span>🏦 Indian Banking · Markets</span>
+    </div>
+  </header>
+
+  <!-- ── STAT BAR ──────────────────────────────────────────────────── -->
+  <div class="stat-bar">
+    <div class="stat-bar-inner">
+      <div class="stat-item">
+        <span class="stat-value red">−8.7%</span>
+        <span class="stat-label">Single-day stock fall</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-value red">₹1L Cr+</span>
+        <span class="stat-label">Market cap wiped out</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-value">₹731</span>
+        <span class="stat-label">52-week low (Mar 30)</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-value red">3.35%</span>
+        <span class="stat-label">NIM in Q3 FY26</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── ARTICLE BODY ──────────────────────────────────────────────── -->
+  <article class="article-body">
+
+    <!-- SECTION 1: The Resignation -->
+    <h2 class="section-heading">The Letter That Shook Dalal Street</h2>
+
+    <p>
+      On March 18, 2026, Atanu Chakraborthy — the part-time chairman of HDFC Bank — sat down
+      and wrote a resignation letter. It was short and deliberately vague. He said that certain
+      <span class="highlight">"happenings and practices"</span> within the bank, observed over
+      two years, were <span class="highlight">"not in congruence with his personal values and ethics."</span>
+      No specifics. No names. No examples. Just that.
+    </p>
+
+    <p>
+      A resignation from the chairman of India's second-largest bank would always make headlines.
+      But it was the phrasing — values, ethics, practices — that set off alarm bells across the
+      financial world. Markets despise ambiguity, and this letter was nothing but ambiguity dressed
+      in formal letterhead.
+    </p>
+
+    <div class="pull-quote">
+      <p>"Certain happenings and practices within the bank that I have observed over the last
+        two years are not in congruence with my personal values and ethics."</p>
+      <cite>— Atanu Chakraborthy, Resignation Letter, March 18, 2026</cite>
+    </div>
+
+    <p>
+      The very next day — March 19 — HDFC Bank's stock plunged <span class="highlight-red">8.7%
+        in a single session</span>, dragging the broader Indian market down by more than 3%, its worst
+      day since June 2024. Because HDFC Bank carries roughly 12% weight in the Nifty 50, the
+      fallout didn't stay contained. It pulled the entire index with it.
+    </p>
+
+    <p>
+      Then came the contradiction that made everything worse. Speaking exclusively to NDTV Profit,
+      Chakraborthy clarified that his letter <em>did not</em> point to any wrongdoing — only
+      ideological differences. He expressed clear respect for the organisation and the board.
+    </p>
+
+    <p>
+      Wait — values and ethics in one breath, and "just ideological differences" in the next?
+      Markets were unsure what to believe, and the stock kept sliding. By March 23, HDFC Bank
+      hit a 52-week low of ₹750 and by March 30 it had dropped further to ₹731. Over
+      <span class="highlight-red">₹70,000 crore</span> of investor wealth had been erased.
+      But the resignation, while the catalyst, was only the surface. Beneath it lay three
+      structural fault lines.
+    </p>
+
+    <!-- SECTION 2: AT1 Bonds -->
+    <h2 class="section-heading">The AT1 Bond Trap: When "Safe" Wasn't Safe</h2>
+
+    <p>
+      To understand what happened next, you first need to understand what an AT1 bond actually is
+      — and why it's nothing like what HDFC Bank's executives allegedly told their clients.
+    </p>
+
+    <p>
+      Start with a normal bond. If you lend an airline ₹10 lakh for five years at 5% interest,
+      the airline is legally obligated to pay you ₹50,000 every year and return your principal
+      at the end of year five. If the airline goes bankrupt, you're at the front of the
+      repayment queue — above even the shareholders.
+    </p>
+
+    <div class="compare-grid">
+      <div class="compare-card good">
+        <p class="compare-card-title">Traditional Bond</p>
+        <p>Fixed maturity date. Guaranteed return of principal. Low interest rate (~5%).
+          Priority payout in bankruptcy. Investor is a creditor.</p>
+      </div>
+      <div class="compare-card bad">
+        <p class="compare-card-title">AT1 Bond</p>
+        <p>No maturity date — ever. High interest (~9–13%). Bonds can be written to zero
+          if capital falls below a threshold. In failure, treated almost like a shareholder.</p>
+      </div>
+    </div>
+
+    <p>
+      AT1 bonds — Additional Tier 1 bonds — are perpetual instruments designed to absorb losses
+      and bolster a bank's capital base during stress. They offer high yields precisely because
+      they carry extreme risk: no end date, no guaranteed repayment, and the possibility of
+      being completely wiped out if regulators deem it necessary.
+    </p>
+
+    <p>
+      In May 2021, HDFC Bank's Dubai branch began selling Credit Suisse AT1 bonds to NRI clients.
+      According to reporting by Business Standard and Deccan Herald, the bank's executives marketed
+      these high-risk perpetual bonds as <span class="highlight-red">"safe, high-yield investments"</span>
+      promising returns of 10–13%. NRI clients were reportedly convinced to transfer their Foreign
+      Currency Non-Resident (FCNR) deposits from India to HDFC Bank's Dubai branch — and those
+      funds were used to purchase Credit Suisse AT1 bonds. The material risks, including the absence
+      of a maturity date and the write-down clause, were allegedly not adequately disclosed.
+    </p>
+
+    <p>
+      Then came March 2023. Credit Suisse collapsed. UBS took it over in an emergency government-brokered
+      rescue. Swiss regulators ordered a complete write-off of approximately <span class="highlight-red">
+        $17 billion</span> in AT1 bonds — making every single investor in those instruments lose
+      everything overnight.
+    </p>
+
+    <div class="info-box">
+      <p class="info-box-title">The Human Cost</p>
+      <p>
+        Consider an NRI living in Dubai who had accumulated ₹1 crore in FCNR deposits earning a
+        steady 5–6%. An HDFC Bank relationship manager calls with an offer: 13% returns on Credit
+        Suisse bonds — safe, blue-chip, prestigious. The name alone inspired trust. So the
+        transfer is made.
+      </p>
+      <p>
+        In March 2023, that ₹1 crore becomes zero. The Swiss regulators didn't need to ask
+        permission. That was the contract all along. The saving grace — a Swiss court later
+        annulled the write-off, restoring these bonds to roughly 30% of face value — but the
+        damage to trust was permanent, and potentially several NRI investors are still in legal
+        limbo.
+      </p>
+    </div>
+
+    <!-- SECTION 3: Merger Problem -->
+    <h2 class="section-heading">The 2023 Merger: A Profitable Marriage With Hidden Costs</h2>
+
+    <p>
+      Even as the AT1 bond story was unfolding, a second, slower-burning crisis was taking shape
+      inside HDFC Bank's balance sheet — one born not of misconduct but of structural arithmetic.
+    </p>
+
+    <p>
+      To understand it, you need to understand how a bank makes money. A bank takes deposits from
+      customers and pays them 2–7% interest. It then lends that money out at 9–12%. The difference
+      — the Net Interest Margin or NIM — is where profit lives.
+    </p>
+
+    <p>
+      There are two kinds of deposits. <span class="highlight">CASA accounts</span> (Current and
+      Savings Accounts) are the bank's cheapest source of funds — savings accounts pay around 2–3%,
+      and current accounts pay nothing. <span class="highlight">Fixed Deposits</span>, on the other
+      hand, are expensive — banks must offer 6–7% to attract them, squeezing the margin on every
+      rupee lent out.
+    </p>
+
+    <p>
+      In 2023, HDFC Bank (the bank) merged with HDFC Limited (a housing finance NBFC). The logic
+      was compelling: HDFC Limited had a massive ₹6.25 lakh crore home loan book with a loyal
+      customer base. But it was an NBFC — it raised money through bond markets, not bank deposits.
+      It brought enormous loan assets into the merged entity but <em>almost no cheap deposits</em>.
+    </p>
+
+    <p>
+      Overnight, the bank inherited 6 lakh crores in loans to fund, but its deposit base hadn't
+      grown proportionally. To cover the gap, it had to aggressively court fixed deposit investors
+      — expensive money. Meanwhile, home loans carry much lower interest rates than the personal
+      and business loans HDFC Bank traditionally focused on. When you blend a large pool of 8.2%
+      home loans with higher-yielding personal loans, your average lending rate drops.
+    </p>
+
+    <p>
+      The result was a textbook margin compression — and it showed up starkly in the numbers.
+    </p>
+
+    <!-- NIM Flow Viz -->
+    <div class="nim-flow">
+      <div class="nim-node high">
+        <span class="nim-node-value">4.1%</span>
+        <span class="nim-node-label">NIM Pre-Merger (FY23)</span>
+      </div>
+      <div class="nim-arrow">→</div>
+      <div class="nim-node" style="background:var(--clr-surface);">
+        <span class="nim-node-value" style="color:var(--clr-muted); font-size:20px;">Merger Shock</span>
+        <span class="nim-node-label">Expensive FDs · Lower Yields</span>
+      </div>
+      <div class="nim-arrow">→</div>
+      <div class="nim-node low">
+        <span class="nim-node-value">3.35%</span>
+        <span class="nim-node-label">NIM in Q3 FY26</span>
+      </div>
+    </div>
+
+    <p>
+      Three forces drove this compression. First, the average lending rate fell because HDFC
+      Limited's home loans (priced around 8.2%) diluted the portfolio of higher-margin personal
+      and business loans (typically 12–18%). Second, deposit costs rose sharply — unable to wait
+      for organic CASA growth, the bank had to offer competitive fixed deposit rates of 6–7.5%.
+      Third — and this is the part that almost nobody discusses — there was a hidden regulatory
+      cost unique to banks.
+    </p>
+
+    <div class="info-box">
+      <p class="info-box-title">The CRR &amp; SLR Penalty</p>
+      <p>
+        Every bank in India must keep approximately 21% of its deposits locked up — 3% in cash
+        with the RBI (Cash Reserve Ratio, or CRR) and 18% in government bonds (Statutory Liquidity
+        Ratio, or SLR). This money earns little to nothing.
+      </p>
+      <p>
+        HDFC Limited, as an NBFC, was exempt from these rules. It could lend nearly 100% of
+        every rupee it raised. But once absorbed into the bank, its entire ₹6.25 lakh crore
+        loan book became subject to these requirements. The merged bank now needed to park roughly
+        ₹1.3 lakh crore idle — capital that could otherwise have been lent out at 9%, generating
+        thousands of crores in additional income.
+      </p>
+    </div>
+
+    <!-- SECTION 4: Loan-to-Deposit Ratio -->
+    <h2 class="section-heading">Loans Outrunning Deposits: The Third Fault Line</h2>
+
+    <p>
+      The third layer of pressure comes from HDFC Bank's loan-to-deposit ratio. Before the merger,
+      this figure sat at a comfortable 87–88%. The RBI's recommended comfort range is 60–80%, so
+      the bank was operating in reasonably safe territory. After the merger, however, that ratio
+      spiked to <span class="highlight-red">110%</span> — meaning the bank had lent out
+      more money than it held in deposits. That is not a sustainable position.
+    </p>
+
+    <p>
+      By Q3 of FY26, the ratio had been walked back down to 98.5% — a meaningful improvement,
+      but still well above the RBI's comfort ceiling. Loans are continuing to grow faster than
+      deposits, which means the bank remains under pressure to either slow its lending growth
+      or aggressively attract new depositors — both of which carry their own costs.
+    </p>
+
+    <!-- SECTION 5: Trust Crisis -->
+    <h2 class="section-heading">When Trust Becomes the Liability</h2>
+
+    <p>
+      In isolation, each of these three problems — the AT1 bond mis-selling allegations, the
+      merger-induced NIM compression, and the elevated loan-to-deposit ratio — is manageable.
+      Banks navigate structural challenges all the time. But three fault lines converging
+      simultaneously, at a moment when global markets are already rattled by geopolitical tensions,
+      is a different proposition entirely.
+    </p>
+
+    <p>
+      And it all became explosive because of trust. HDFC Bank was never just a bank — it was
+      considered India's most dependable banking compounder. A stock that long-term investors held
+      with the same quiet confidence they might reserve for government bonds. The chairman's
+      resignation letter, whatever its intent, struck at exactly that confidence.
+    </p>
+
+    <p>
+      In banking, trust is not a soft asset. It is the asset. It determines whether depositors
+      keep their money with you, whether the market values your stock at a premium, and whether
+      the regulatory relationship remains cooperative. When a bank has a trust problem, it is not
+      facing an ordinary business challenge — it is facing an existential one.
+    </p>
+
+    <div class="pull-quote">
+      <p>HDFC Bank isn't just a stock that fell. It's a case study in how ambiguity,
+        structural stress, and eroded credibility can compound faster than any single problem
+        ever could on its own.</p>
+    </div>
+
+    <p>
+      The path forward requires HDFC Bank to address all three layers — rebuild CASA ratios
+      organically, resolve the NRI investor grievances transparently, and demonstrate that
+      its NIM compression is bottoming out rather than continuing to deteriorate. The numbers
+      suggest the bank remains fundamentally sound. But fundamentals alone cannot restore
+      what a trust deficit destroys.
+    </p>
+
+    <!-- CONCLUSION -->
+    <div class="conclusion-box">
+      <h3>Key Takeaways</h3>
+      <ul class="conclusion-list">
+        <li>
+          HDFC Bank chairman Atanu Chakraborthy's March 2026 resignation — citing values and
+          ethics but then softening to "ideological differences" — created a contradiction that
+          the market found more alarming than clarity would have.
+        </li>
+        <li>
+          AT1 bonds are high-risk perpetual instruments. HDFC Bank's Dubai branch allegedly sold
+          Credit Suisse AT1 bonds to NRI clients as "safe" investments; when Credit Suisse
+          collapsed in 2023, those investors faced a complete write-off.
+        </li>
+        <li>
+          The 2023 merger with HDFC Limited compressed the bank's Net Interest Margin from ~4.1%
+          to 3.35% through three channels: lower average lending rates, higher deposit costs, and
+          a new CRR/SLR burden on ₹6.25 lakh crore in inherited loans.
+        </li>
+        <li>
+          The loan-to-deposit ratio spiked to 110% post-merger and has been reduced to 98.5%
+          by Q3 FY26 — still above the RBI's recommended comfort ceiling of 80%.
+        </li>
+        <li>
+          In banking, a trust deficit is not a soft problem. It is a structural one that
+          accelerates and amplifies every other challenge. HDFC Bank's path to recovery
+          depends as much on restored credibility as on improving its balance sheet metrics.
+        </li>
+      </ul>
+    </div>
+
+  </article>
+
+  <!-- ── REFERENCES ─────────────────────────────────────────────────── -->
+  <section class="references">
+    <h3>Citations &amp; References</h3>
+    <ul class="ref-list">
+      <li data-num="1">
+        Business Standard — "HDFC Bank Chairman Atanu Chakraborthy Resigns, Cites Values
+        and Ethics," March 18, 2026.
+      </li>
+      <li data-num="2">
+        NDTV Profit — Exclusive interview with Atanu Chakraborthy post-resignation,
+        March 19, 2026. Chakraborthy clarified no wrongdoing, only ideological differences.
+      </li>
+      <li data-num="3">
+        Business Standard &amp; Deccan Herald — Reporting on HDFC Bank Dubai branch
+        marketing of Credit Suisse AT1 bonds to NRI clients (2021–2023).
+      </li>
+      <li data-num="4">
+        Swiss Financial Market Supervisory Authority (FINMA) — Ordered write-off of ~$17 billion
+        in Credit Suisse AT1 bonds during the UBS emergency rescue, March 2023.
+      </li>
+      <li data-num="5">
+        Swiss Federal Administrative Court — Ruling annulling the complete AT1 write-off;
+        bonds restored to approximately 30% of face value.
+      </li>
+      <li data-num="6">
+        RBI Circular — Cash Reserve Ratio (CRR) at 4%; Statutory Liquidity Ratio (SLR) at 18%;
+        combined statutory lock-up requirement of ~21% of deposits for all scheduled commercial banks.
+      </li>
+      <li data-num="7">
+        HDFC Bank Q3 FY26 Earnings — Net Interest Margin of 3.35%; Loan-to-Deposit Ratio of 98.5%;
+        reported January 2026.
+      </li>
+      <li data-num="8">
+        Equentist Analysis — Loan growth outpacing deposit growth at HDFC Bank post-merger;
+        cited in context of LDR trajectory, 2024–2026.
+      </li>
+      <li data-num="9">
+        NSE/BSE Market Data — HDFC Bank 52-week low of ₹750 on March 23, 2026;
+        further drop to ₹731 on March 30, 2026.
+      </li>
+    </ul>
+  </section>
+
+</div>

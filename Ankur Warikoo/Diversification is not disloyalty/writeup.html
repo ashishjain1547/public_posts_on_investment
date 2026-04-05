@@ -1,0 +1,1476 @@
+<head>
+  <script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+  <!-- Google AdSense Using Machine Learning Code -->
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: "ca-pub-3071098372371409",
+      enable_page_level_ads: true
+    });
+  </script>
+
+  <script>
+    $(document).ready(function () {
+      $.ajax({
+        url: "https://raw.githubusercontent.com/ashishjain1547/public_posts_on_investment/refs/heads/main/links_to_clubs.json",
+        success: function (result) {
+          let grouplink = JSON.parse(result)['current club'];
+          $("#customWhatsAppGroupLinkWrapper").html(
+            `
+                        <h2 class="custom_link_h2"><a href="${grouplink}" target="_blank"> 
+                            <span>Join us on:</span>
+                            <span class="customLink"><i class="fa fa-whatsapp"></i> Whatsapp </span>
+                            </a>
+                        </h2>
+                        `
+          );
+        }
+      });
+    });
+  </script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+    pre {
+      white-space: pre-wrap;
+      white-space: -moz-pre-wrap;
+      white-space: -pre-wrap;
+      white-space: -o-pre-wrap;
+      word-wrap: break-word;
+    }
+
+    .customLink {
+      background-color: #4CAF50;
+      border: none;
+      color: white !important;
+      padding: 8px 13px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 14px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+
+    .customLink:hover {
+      text-decoration: none;
+    }
+
+    div.code-block-decoration.footer {
+      display: none;
+    }
+
+    button.export-sheets-button-wrapper {
+      display: none;
+    }
+  </style>
+
+  <style>
+    .custom_link_h2 a {
+      color: black;
+      text-decoration: none;
+      text-align: center;
+    }
+
+    .custom_link_h2 a:hover {
+      color: black;
+    }
+
+    .custom_link_h2 a:active {
+      color: black;
+    }
+
+    .custom_link_h2 span {
+      translate: 0px -5px;
+      display: inline-block;
+    }
+
+    .custom_link_h2 img {
+      width: 100px;
+      padding: 0px;
+      border: none;
+      box-shadow: none;
+    }
+
+    .customul {
+      list-style: none;
+    }
+
+    [aria-hidden='true'] {
+      display: none;
+    }
+  </style>
+
+  <style>
+    pre {
+      white-space: pre-wrap;
+      white-space: -moz-pre-wrap;
+      white-space: -pre-wrap;
+      white-space: -o-pre-wrap;
+      word-wrap: break-word;
+    }
+
+    .dot {
+      height: 12px;
+      width: 12px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    .arrow {
+      border: solid black;
+      border-width: 0 3px 3px 0;
+      display: inline-block;
+      padding: 3px;
+    }
+
+    .right {
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+    }
+
+    .left {
+      transform: rotate(135deg);
+      -webkit-transform: rotate(135deg);
+    }
+
+    .up {
+      transform: rotate(-135deg);
+      -webkit-transform: rotate(-135deg);
+    }
+
+    .down {
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+    }
+
+    .custom_iframe {
+      width: 100%;
+      height: 305px;
+    }
+  </style>
+
+  <style>
+    /* ─── Reset ─────────────────────────────────────────────────────── */
+    div.customOuterWrapper *,
+    div.customOuterWrapper *::before,
+    div.customOuterWrapper *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* ─── Outer Wrapper ──────────────────────────────────────────────── */
+    div.customOuterWrapper {
+      --clr-bg: #0d1117;
+      --clr-surface: #141b26;
+      --clr-border: #1e2d42;
+      --clr-gold: #c9a84c;
+      --clr-gold-light: #e4c97e;
+      --clr-amber: #f0a500;
+      --clr-text: #d4dce8;
+      --clr-muted: #7a8fa6;
+      --clr-heading: #eef2f7;
+      --clr-accent-red: #c0392b;
+
+      font-family: 'Source Serif 4', Georgia, serif;
+      background-color: var(--clr-bg);
+      color: var(--clr-text);
+      line-height: 1.8;
+      font-size: 18px;
+      font-weight: 300;
+      -webkit-font-smoothing: antialiased;
+      min-height: 100vh;
+    }
+
+    /* ─── Hero ───────────────────────────────────────────────────────── */
+    div.customOuterWrapper .hero {
+      position: relative;
+      padding: 80px 24px 60px;
+      max-width: 820px;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+
+    div.customOuterWrapper .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--clr-gold), var(--clr-amber), transparent);
+    }
+
+    div.customOuterWrapper .hero-eyebrow {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--clr-gold);
+      margin-bottom: 22px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    div.customOuterWrapper .hero-eyebrow::after {
+      content: '';
+      flex: 1;
+      max-width: 60px;
+      height: 1px;
+      background: var(--clr-gold);
+      opacity: 0.5;
+    }
+
+    div.customOuterWrapper .hero h1 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(38px, 6vw, 64px);
+      font-weight: 900;
+      color: var(--clr-heading);
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      margin-bottom: 24px;
+    }
+
+    div.customOuterWrapper .hero h1 em {
+      color: var(--clr-gold);
+      font-style: italic;
+    }
+
+    div.customOuterWrapper .hero-sub {
+      font-size: 19px;
+      color: var(--clr-muted);
+      font-weight: 300;
+      max-width: 600px;
+      line-height: 1.6;
+      margin-bottom: 32px;
+    }
+
+    div.customOuterWrapper .hero-meta {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 13px;
+      color: var(--clr-muted);
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      padding-top: 24px;
+      border-top: 1px solid var(--clr-border);
+    }
+
+    div.customOuterWrapper .hero-meta span {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* ─── Stat Bar ───────────────────────────────────────────────────── */
+    div.customOuterWrapper .stat-bar {
+      background: var(--clr-surface);
+      border-top: 1px solid var(--clr-border);
+      border-bottom: 1px solid var(--clr-border);
+      padding: 28px 24px;
+    }
+
+    div.customOuterWrapper .stat-bar-inner {
+      max-width: 820px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 24px;
+    }
+
+    div.customOuterWrapper .stat-item {
+      text-align: center;
+      padding: 16px;
+      border: 1px solid var(--clr-border);
+      border-radius: 4px;
+      background: rgba(201, 168, 76, 0.04);
+      transition: border-color 0.3s;
+    }
+
+    div.customOuterWrapper .stat-item:hover {
+      border-color: var(--clr-gold);
+    }
+
+    div.customOuterWrapper .stat-value {
+      font-family: 'Playfair Display', serif;
+      font-size: 32px;
+      font-weight: 700;
+      color: var(--clr-gold-light);
+      display: block;
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+
+    div.customOuterWrapper .stat-value.red {
+      color: #e05252;
+    }
+
+    div.customOuterWrapper .stat-label {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 11px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--clr-muted);
+    }
+
+    /* ─── Article Body ───────────────────────────────────────────────── */
+    div.customOuterWrapper .article-body {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 60px 24px;
+    }
+
+    /* ─── Section Heading ────────────────────────────────────────────── */
+    div.customOuterWrapper .section-heading {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--clr-heading);
+      margin: 56px 0 20px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--clr-border);
+      position: relative;
+    }
+
+    div.customOuterWrapper .section-heading::after {
+      content: '';
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      width: 48px;
+      height: 2px;
+      background: var(--clr-gold);
+    }
+
+    /* ─── Paragraphs ─────────────────────────────────────────────────── */
+    div.customOuterWrapper .article-body p {
+      margin-bottom: 22px;
+      color: var(--clr-text);
+    }
+
+    /* ─── Pull Quote ─────────────────────────────────────────────────── */
+    div.customOuterWrapper .pull-quote {
+      border-left: 3px solid var(--clr-gold);
+      margin: 40px 0;
+      padding: 20px 28px;
+      background: var(--clr-surface);
+      border-radius: 0 4px 4px 0;
+    }
+
+    div.customOuterWrapper .pull-quote p {
+      font-family: 'Playfair Display', serif;
+      font-size: 20px;
+      font-style: italic;
+      font-weight: 400;
+      color: var(--clr-gold-light);
+      line-height: 1.6;
+      margin-bottom: 10px !important;
+    }
+
+    div.customOuterWrapper .pull-quote cite {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 12px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--clr-muted);
+      font-style: normal;
+    }
+
+    /* ─── Info Box ───────────────────────────────────────────────────── */
+    div.customOuterWrapper .info-box {
+      background: var(--clr-surface);
+      border: 1px solid var(--clr-border);
+      border-radius: 6px;
+      padding: 28px 32px;
+      margin: 36px 0;
+    }
+
+    div.customOuterWrapper .info-box-title {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--clr-gold);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    div.customOuterWrapper .info-box-title::before {
+      content: '◆';
+      font-size: 8px;
+    }
+
+    div.customOuterWrapper .info-box p {
+      font-size: 16px;
+      margin-bottom: 12px !important;
+      color: var(--clr-text);
+    }
+
+    div.customOuterWrapper .info-box p:last-child {
+      margin-bottom: 0 !important;
+    }
+
+    /* ─── Comparison Grid ────────────────────────────────────────────── */
+    div.customOuterWrapper .compare-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin: 36px 0;
+    }
+
+    div.customOuterWrapper .compare-card {
+      background: var(--clr-surface);
+      border: 1px solid var(--clr-border);
+      border-radius: 6px;
+      padding: 22px 24px;
+    }
+
+    div.customOuterWrapper .compare-card.good {
+      border-top: 2px solid var(--clr-gold);
+    }
+
+    div.customOuterWrapper .compare-card.bad {
+      border-top: 2px solid #e05252;
+    }
+
+    div.customOuterWrapper .compare-card-title {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    div.customOuterWrapper .compare-card.good .compare-card-title {
+      color: var(--clr-gold);
+    }
+
+    div.customOuterWrapper .compare-card.bad .compare-card-title {
+      color: #e05252;
+    }
+
+    div.customOuterWrapper .compare-card p {
+      font-size: 15px;
+      line-height: 1.65;
+      color: var(--clr-text);
+      margin-bottom: 0 !important;
+    }
+
+    /* ─── NIM Flow ───────────────────────────────────────────────────── */
+    div.customOuterWrapper .nim-flow {
+      display: flex;
+      align-items: center;
+      gap: 0;
+      margin: 36px 0;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    div.customOuterWrapper .nim-node {
+      background: var(--clr-surface);
+      border: 1px solid var(--clr-border);
+      border-radius: 6px;
+      padding: 18px 22px;
+      text-align: center;
+      flex: 1;
+      min-width: 130px;
+    }
+
+    div.customOuterWrapper .nim-node-value {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+      font-weight: 700;
+      display: block;
+    }
+
+    div.customOuterWrapper .nim-node-label {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 11px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--clr-muted);
+      margin-top: 4px;
+      display: block;
+    }
+
+    div.customOuterWrapper .nim-node.high .nim-node-value {
+      color: var(--clr-gold-light);
+    }
+
+    div.customOuterWrapper .nim-node.low .nim-node-value {
+      color: #e05252;
+    }
+
+    div.customOuterWrapper .nim-arrow {
+      font-size: 22px;
+      color: var(--clr-muted);
+      padding: 0 8px;
+      flex-shrink: 0;
+    }
+
+    /* ─── Conclusion ─────────────────────────────────────────────────── */
+    div.customOuterWrapper .conclusion-box {
+      background: var(--clr-surface);
+      border: 1px solid var(--clr-border);
+      border-radius: 8px;
+      padding: 36px 40px;
+      margin: 48px 0 0;
+    }
+
+    div.customOuterWrapper .conclusion-box h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--clr-heading);
+      margin-bottom: 24px;
+    }
+
+    div.customOuterWrapper .conclusion-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    div.customOuterWrapper .conclusion-list li {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--clr-border);
+      font-size: 16px;
+      line-height: 1.65;
+    }
+
+    div.customOuterWrapper .conclusion-list li:last-child {
+      border-bottom: none;
+    }
+
+    div.customOuterWrapper .conclusion-list li::before {
+      content: '#';
+      color: var(--clr-gold);
+      font-weight: 700;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    /* ─── References ─────────────────────────────────────────────────── */
+    div.customOuterWrapper .references {
+      padding: 48px 24px 60px;
+      max-width: 820px;
+      margin: 0 auto;
+      border-top: 1px solid var(--clr-border);
+    }
+
+    div.customOuterWrapper .references h3 {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--clr-gold);
+      margin-bottom: 20px;
+    }
+
+    div.customOuterWrapper .ref-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    div.customOuterWrapper .ref-list li {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 13px;
+      color: var(--clr-muted);
+      padding: 10px 0;
+      border-bottom: 1px solid var(--clr-border);
+      line-height: 1.6;
+      display: flex;
+      gap: 10px;
+    }
+
+    div.customOuterWrapper .ref-list li::before {
+      content: attr(data-num);
+      color: var(--clr-gold);
+      font-weight: 500;
+      flex-shrink: 0;
+    }
+
+    div.customOuterWrapper .ref-list li:last-child {
+      border-bottom: none;
+    }
+
+    /* ─── Highlighted Inline ─────────────────────────────────────────── */
+    div.customOuterWrapper .highlight {
+      color: var(--clr-gold-light);
+      font-weight: 400;
+    }
+
+    div.customOuterWrapper .highlight-red {
+      color: #e05252;
+      font-weight: 400;
+    }
+
+    /* ─── Mobile ─────────────────────────────────────────────────────── */
+    @media (max-width: 600px) {
+      div.customOuterWrapper .compare-grid {
+        grid-template-columns: 1fr;
+      }
+
+      div.customOuterWrapper .nim-flow {
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      div.customOuterWrapper .nim-arrow {
+        transform: rotate(90deg);
+      }
+
+      div.customOuterWrapper .conclusion-box {
+        padding: 24px 20px;
+      }
+    }
+  </style>
+
+
+  <style>
+    /* ── Reset scoped to wrapper ── */
+    div.customOuterWrapper *,
+    div.customOuterWrapper *::before,
+    div.customOuterWrapper *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* ── CSS Variables ── */
+    div.customOuterWrapper {
+      --navy: #0d1b2a;
+      --navy-mid: #132235;
+      --navy-light: #1e3250;
+      --gold: #c9a84c;
+      --gold-light: #e8c97a;
+      --gold-pale: #f5e6b8;
+      --cream: #faf6ee;
+      --text-main: #e8e0d0;
+      --text-muted: #a09080;
+      --text-body: #ccc4b4;
+      --rule: rgba(201, 168, 76, 0.3);
+      --serif-display: 'Playfair Display', Georgia, serif;
+      --serif-body: 'Source Serif 4', Georgia, serif;
+
+      /* Layout */
+      background-color: var(--navy);
+      color: var(--text-body);
+      font-family: var(--serif-body);
+      font-size: 18px;
+      line-height: 1.78;
+      font-weight: 300;
+      padding: 0;
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+
+    /* ── Hero ── */
+    div.customOuterWrapper .hero {
+      position: relative;
+      background-color: var(--navy);
+      background-image:
+        radial-gradient(ellipse 80% 60% at 50% -10%, rgba(201, 168, 76, 0.12) 0%, transparent 70%),
+        repeating-linear-gradient(0deg,
+          transparent,
+          transparent 59px,
+          rgba(201, 168, 76, 0.04) 60px),
+        repeating-linear-gradient(90deg,
+          transparent,
+          transparent 59px,
+          rgba(201, 168, 76, 0.04) 60px);
+      padding: 80px 24px 64px;
+      text-align: center;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    div.customOuterWrapper .hero-kicker {
+      display: inline-block;
+      font-family: var(--serif-body);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--gold);
+      border: 1px solid var(--gold);
+      padding: 5px 14px;
+      margin-bottom: 32px;
+      opacity: 0;
+      animation: fadeUp 0.6s ease 0.1s forwards;
+    }
+
+    div.customOuterWrapper .hero-title {
+      font-family: var(--serif-display);
+      font-size: clamp(36px, 6vw, 72px);
+      font-weight: 900;
+      line-height: 1.08;
+      color: var(--cream);
+      max-width: 820px;
+      margin: 0 auto 24px;
+      opacity: 0;
+      animation: fadeUp 0.7s ease 0.25s forwards;
+    }
+
+    div.customOuterWrapper .hero-title em {
+      font-style: italic;
+      color: var(--gold-light);
+    }
+
+    div.customOuterWrapper .hero-subtitle {
+      font-family: var(--serif-body);
+      font-size: 20px;
+      font-weight: 300;
+      font-style: italic;
+      color: var(--text-muted);
+      max-width: 600px;
+      margin: 0 auto 40px;
+      opacity: 0;
+      animation: fadeUp 0.7s ease 0.4s forwards;
+    }
+
+    div.customOuterWrapper .hero-meta {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      font-size: 12px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      opacity: 0;
+      animation: fadeUp 0.6s ease 0.55s forwards;
+    }
+
+    div.customOuterWrapper .hero-meta span {
+      color: var(--gold);
+    }
+
+    div.customOuterWrapper .hero-meta-dot {
+      width: 3px;
+      height: 3px;
+      border-radius: 50%;
+      background: var(--rule);
+      display: inline-block;
+    }
+
+    /* ── Article Body Container ── */
+    div.customOuterWrapper .article-body {
+      max-width: 740px;
+      margin: 0 auto;
+      padding: 64px 24px 40px;
+    }
+
+    /* ── Drop Cap Lead ── */
+    div.customOuterWrapper .lead-para::first-letter {
+      font-family: var(--serif-display);
+      font-size: 5.5em;
+      font-weight: 900;
+      color: var(--gold);
+      float: left;
+      line-height: 0.8;
+      margin: 6px 12px -4px 0;
+    }
+
+    div.customOuterWrapper .lead-para {
+      font-size: 20px;
+      line-height: 1.7;
+      color: var(--text-main);
+      margin-bottom: 32px;
+      font-style: italic;
+    }
+
+    /* ── Body Paragraphs ── */
+    div.customOuterWrapper p {
+      margin-bottom: 28px;
+      color: var(--text-body);
+    }
+
+    /* ── Section Headings ── */
+    div.customOuterWrapper .section-block {
+      margin-top: 64px;
+    }
+
+    div.customOuterWrapper .section-number {
+      display: block;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 10px;
+    }
+
+    div.customOuterWrapper h2 {
+      font-family: var(--serif-display);
+      font-size: clamp(26px, 3.5vw, 36px);
+      font-weight: 700;
+      color: var(--cream);
+      line-height: 1.2;
+      margin-bottom: 28px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    div.customOuterWrapper h2 em {
+      font-style: italic;
+      color: var(--gold-light);
+    }
+
+    /* ── Pull Quotes ── */
+    div.customOuterWrapper .pull-quote {
+      margin: 48px -32px;
+      padding: 32px 40px;
+      background: var(--navy-mid);
+      border-left: 4px solid var(--gold);
+      position: relative;
+      overflow: hidden;
+    }
+
+    div.customOuterWrapper .pull-quote::before {
+      content: '\201C';
+      position: absolute;
+      top: -20px;
+      left: 24px;
+      font-family: var(--serif-display);
+      font-size: 120px;
+      color: rgba(201, 168, 76, 0.08);
+      line-height: 1;
+      pointer-events: none;
+    }
+
+    div.customOuterWrapper .pull-quote p {
+      font-family: var(--serif-display);
+      font-size: clamp(20px, 2.5vw, 26px);
+      font-weight: 400;
+      font-style: italic;
+      color: var(--gold-pale);
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    /* ── Data Callout Cards ── */
+    div.customOuterWrapper .data-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 16px;
+      margin: 40px 0;
+    }
+
+    div.customOuterWrapper .data-card {
+      background: var(--navy-light);
+      border: 1px solid var(--rule);
+      padding: 22px 20px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      transition: border-color 0.3s ease;
+    }
+
+    div.customOuterWrapper .data-card:hover {
+      border-color: var(--gold);
+    }
+
+    div.customOuterWrapper .data-card::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+      transform: scaleX(0);
+      transition: transform 0.4s ease;
+    }
+
+    div.customOuterWrapper .data-card:hover::after {
+      transform: scaleX(1);
+    }
+
+    div.customOuterWrapper .data-card .stat {
+      display: block;
+      font-family: var(--serif-display);
+      font-size: 38px;
+      font-weight: 900;
+      color: var(--gold);
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+
+    div.customOuterWrapper .data-card .stat-label {
+      display: block;
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+
+    /* ── Country Timeline ── */
+    div.customOuterWrapper .country-case {
+      margin: 40px 0;
+      padding: 28px 28px 28px 24px;
+      background: var(--navy-mid);
+      border: 1px solid var(--rule);
+      position: relative;
+    }
+
+    div.customOuterWrapper .country-case .country-tag {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    div.customOuterWrapper .country-case strong {
+      font-family: var(--serif-display);
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--cream);
+      display: block;
+      margin-bottom: 14px;
+    }
+
+    div.customOuterWrapper .country-case p {
+      margin-bottom: 0;
+      font-size: 16px;
+    }
+
+    /* ── Horizontal Rule ── */
+    div.customOuterWrapper .ornament-rule {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin: 60px 0;
+    }
+
+    div.customOuterWrapper .ornament-rule::before,
+    div.customOuterWrapper .ornament-rule::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--rule);
+    }
+
+    div.customOuterWrapper .ornament-rule span {
+      color: var(--gold);
+      font-size: 18px;
+    }
+
+    /* ── Conclusion Bullets ── */
+    div.customOuterWrapper .conclusion-box {
+      background: var(--navy-mid);
+      border: 1px solid var(--rule);
+      border-top: 3px solid var(--gold);
+      padding: 40px;
+      margin-top: 64px;
+    }
+
+    div.customOuterWrapper .conclusion-box h2 {
+      border-bottom: none;
+      padding-bottom: 0;
+      margin-bottom: 32px;
+    }
+
+    div.customOuterWrapper .conclusion-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    div.customOuterWrapper .conclusion-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      padding: 16px 0;
+      border-bottom: 1px solid rgba(201, 168, 76, 0.1);
+      font-size: 16px;
+      line-height: 1.65;
+      color: var(--text-body);
+    }
+
+    div.customOuterWrapper .conclusion-list li:last-child {
+      border-bottom: none;
+    }
+
+    div.customOuterWrapper .conclusion-list li::before {
+      content: '$';
+      color: var(--gold);
+      font-size: 10px;
+      flex-shrink: 0;
+      margin-top: 6px;
+    }
+
+    /* ── References ── */
+    div.customOuterWrapper .references-section {
+      margin-top: 64px;
+      padding-top: 32px;
+      border-top: 1px solid var(--rule);
+    }
+
+    div.customOuterWrapper .references-section h3 {
+      font-family: var(--serif-display);
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--cream);
+      margin-bottom: 24px;
+    }
+
+    div.customOuterWrapper .ref-list {
+      list-style: none;
+      padding: 0;
+      counter-reset: ref-counter;
+    }
+
+    div.customOuterWrapper .ref-list li {
+      counter-increment: ref-counter;
+      display: flex;
+      gap: 14px;
+      margin-bottom: 16px;
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    div.customOuterWrapper .ref-list li::before {
+      content: '[' counter(ref-counter) ']';
+      color: var(--gold);
+      font-weight: 600;
+      flex-shrink: 0;
+      font-family: var(--serif-body);
+      font-size: 13px;
+      padding-top: 1px;
+    }
+
+    div.customOuterWrapper .ref-list li em {
+      font-style: italic;
+    }
+
+    /* ── Footer ── */
+    div.customOuterWrapper .article-footer {
+      max-width: 740px;
+      margin: 0 auto;
+      padding: 40px 24px 64px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid var(--rule);
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    div.customOuterWrapper .article-footer .footer-note {
+      font-size: 12px;
+      color: var(--text-muted);
+      font-style: italic;
+      line-height: 1.5;
+    }
+
+    div.customOuterWrapper .article-footer .footer-tag {
+      font-size: 11px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+
+    /* ── Highlight Inline ── */
+    div.customOuterWrapper mark {
+      background: transparent;
+      color: var(--gold-light);
+      font-style: italic;
+    }
+
+    /* ── Animations ── */
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(18px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<div id="customWhatsAppGroupLinkWrapper"></div>
+<br>
+<a class="customLink" href="https://survival8.blogspot.com/2025/05/lessons-in-investing.html" target="_blank">Lessons in
+  Investing</a> &nbsp;&nbsp; <a
+  href="https://survival8.blogspot.com/2025/05/lessons-in-investing.html#customPostsByAnkurWarikooHeader" target="_blank"
+  class="customLink">Other Articles by Ankur Warikoo</a> &nbsp;&nbsp; <a
+  href="https://survival8.blogspot.com/2026/04/what-exactly-is-happening-with-hdfc-bank.html" target="_blank"
+  class="customLink">&lt;&lt;&lt; Previously</a>
+<!-- &nbsp;&nbsp; <a href="" target="_blank" class="customLink">Next &gt;&gt;&gt;</a> -->
+<br>
+
+<div class="separator" style="clear: both;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEizFpXA-vM9_rfmL5vLJKRpiEhTSDaHzBcShAWsQHpK4VHpsV72wvmn7uVBQxZLEYE8ssR2QpW6cZ26-5igCHOjthZEnNNE_IkGfqA2N5fV8eE_Uw1D-jUOCg_8Lc2Hz-wJX4DT38N3Q7p9SHpZjJGsExhrecho9x9mxDlcUdpXCP04Wh0k5D0TfCBLPpfr/s600/ChatGPT%20Image%20Apr%205,%202026,%2001_17_20%20PM.png" style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" width="600" data-original-height="400" data-original-width="600" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEizFpXA-vM9_rfmL5vLJKRpiEhTSDaHzBcShAWsQHpK4VHpsV72wvmn7uVBQxZLEYE8ssR2QpW6cZ26-5igCHOjthZEnNNE_IkGfqA2N5fV8eE_Uw1D-jUOCg_8Lc2Hz-wJX4DT38N3Q7p9SHpZjJGsExhrecho9x9mxDlcUdpXCP04Wh0k5D0TfCBLPpfr/s600/ChatGPT%20Image%20Apr%205,%202026,%2001_17_20%20PM.png"/></a></div>
+
+
+<br>
+
+<iframe class="custom_iframe" src="https://www.youtube.com/embed/4BYRuKJu83Y"
+  title="Your 100% INDIAN Portfolio Might be in DANGER | Ankur Warikoo Hindi" frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<br>
+
+<div class="customOuterWrapper">
+
+  <!-- ── HERO ── -->
+  <header class="hero">
+    <span class="hero-kicker">Personal Finance &amp; Investing</span>
+    <h1 class="hero-title">Why Putting All Your Money in India Is a <em>Patriotic Mistake</em></h1>
+    <p class="hero-subtitle">The case for global diversification — and why loving your country doesn't mean betting
+      everything on it.</p>
+    <div class="hero-meta">
+      <span>Investment &amp; Strategy</span>
+      <span class="hero-meta-dot"></span>
+      <span style="color:var(--text-muted);">12 min read</span>
+      <span class="hero-meta-dot"></span>
+      <span style="color:var(--text-muted);">2025</span>
+    </div>
+  </header>
+
+  <!-- ── BODY ── -->
+  <div class="article-body">
+
+    <!-- Lead -->
+    <p class="lead-para">People often ask me why I invest in the US, why I put money into startups, and why — despite
+      everything I say about Indian markets — I haven't parked all my money there. This is my answer. And it begins not
+      in Mumbai, not in New York, but in Tokyo, in 1989.</p>
+
+    <!-- SECTION 1 -->
+    <div class="section-block">
+      <span class="section-number">§ 01 — The Japan Warning</span>
+      <h2>The Ghost of the <em>Nikkei</em></h2>
+
+      <p>In 1989, Japan was at the absolute apex of its power. Of the fifty largest companies in the world, thirty-two
+        were Japanese. Harvard professors were authoring breathless books proclaiming Japan as the inevitable dominant
+        force of the twenty-first century. The land beneath the Imperial Palace in Tokyo was, by some estimates, worth
+        more than the entire state of California. Every serious investor knew — or thought they knew — that Japan was
+        the future.</p>
+
+      <div class="data-grid">
+        <div class="data-card">
+          <span class="stat">39,000</span>
+          <span class="stat-label">Nikkei 225 peak, December 1989</span>
+        </div>
+        <div class="data-card">
+          <span class="stat">–82%</span>
+          <span class="stat-label">Decline from peak over the following years</span>
+        </div>
+        <div class="data-card">
+          <span class="stat">34 yrs</span>
+          <span class="stat-label">Time to recover back to 39,000</span>
+        </div>
+        <div class="data-card">
+          <span class="stat">1.1%</span>
+          <span class="stat-label">Annualised return for a 1989 investor</span>
+        </div>
+      </div>
+
+      <p>The Nikkei 225 index peaked at over 39,000. Then it collapsed — by eighty-two percent. It took thirty-four full
+        years for the index to claw its way back to that same number. If you had invested in Japan's index in December
+        1989 and held on, your annualised return over those three-and-a-half decades would have been a humbling 1.1
+        percent per year. Barely above zero. Less than a savings account.</p>
+
+      <div class="pull-quote">
+        <p>The countries that looked like certain winners almost never remained on top. Confidence is not a moat.
+          Dominance is not permanent.</p>
+      </div>
+
+      <p>And by 2024, of the fifty largest companies in the world, Japan had not a single entry in the top thirty. The
+        companies that defined global capitalism in 1989 had, for the most part, faded into irrelevance or stagnation.
+        The lesson isn't that Japan failed — it's that no nation's economic dominance is permanent, and yet investors
+        behave as if it is.</p>
+    </div>
+
+    <!-- SECTION 2 -->
+    <div class="section-block">
+      <span class="section-number">§ 02 — Cautionary Tales</span>
+      <h2>China, Brazil, and the <em>Inevitability Trap</em></h2>
+
+      <p>Japan is the clearest example, but it is far from the only one. History offers a pattern: the countries that
+        look like certain winners almost never remain on top for long. Two more recent stories illustrate this sharply.
+      </p>
+
+      <div class="country-case">
+        <span class="country-tag">Case Study — China</span>
+        <strong>The "Inevitable Superpower" That Peaked</strong>
+        <p>In 2020, the Centre for Economics and Business Research predicted that China would overtake the United States
+          as the world's largest economy. The prior two decades seemed to confirm this trajectory — unparalleled
+          infrastructure buildout, hundreds of millions lifted from poverty, relentless GDP growth. But by February
+          2024, China's stock market index was sharply off its highs. Evergrande, once the country's largest real estate
+          developer, collapsed spectacularly under a mountain of debt. Demographic trouble followed: China's birth rate
+          fell to just 7.92 million in 2025, a record low. The story of China's "inevitable" rise had, quietly, begun to
+          stall.</p>
+      </div>
+
+      <div class="country-case">
+        <span class="country-tag">Case Study — Brazil</span>
+        <strong>The BRIC Dream That Dissolved</strong>
+        <p>Brazil led the famous BRIC acronym — Brazil, Russia, India, China — the quartet of emerging economies that
+          investment banks in the 2000s declared would reshape the world order. Brazil was first alphabetically, and it
+          felt first in many other ways too. It hosted the 2014 FIFA World Cup and the 2016 Summer Olympics. In 2011,
+          Brazil's GDP per capita stood at approximately $13,300. By 2020, it had nearly halved, falling to around
+          $6,900. The Brazilian real collapsed against the dollar — from roughly 1.7 to the dollar in 2011 to nearly 5.4
+          by 2020. The BRIC dream, for Brazil at least, became a cautionary tale of overconfidence.</p>
+      </div>
+
+      <p>These aren't stories designed to frighten you. They are illustrations of a structural truth: in the last
+        twenty-five years, <mark>no single country has consistently topped global stock market performance across
+          consecutive years</mark>. The leader rotates. Sometimes it is the US. Sometimes India. Sometimes a smaller
+        emerging market you barely track. No one can predict it reliably. That uncertainty is precisely the argument for
+        diversification.</p>
+    </div>
+
+    <!-- SECTION 3 -->
+    <div class="section-block">
+      <span class="section-number">§ 03 — The India Concentration Problem</span>
+      <h2>How Much of the World Are <em>You Actually Invested In?</em></h2>
+
+      <p>India's stock market represents roughly four percent of global market capitalisation. That means, if all your
+        financial assets are in Indian markets, you are exposed to just four percent of the world's investable
+        opportunity — and entirely cut off from the remaining ninety-six percent.</p>
+
+      <p>But look closer at where Indian household wealth actually sits. According to data from the Reserve Bank of
+        India, the typical Indian household's assets break down roughly as follows:</p>
+
+      <div class="data-grid">
+        <div class="data-card">
+          <span class="stat">77%</span>
+          <span class="stat-label">Real estate</span>
+        </div>
+        <div class="data-card">
+          <span class="stat">11%</span>
+          <span class="stat-label">Gold</span>
+        </div>
+        <div class="data-card">
+          <span class="stat">7%</span>
+          <span class="stat-label">Durables (phones, appliances, etc.)</span>
+        </div>
+        <div class="data-card">
+          <span class="stat">5%</span>
+          <span class="stat-label">All financial investments combined</span>
+        </div>
+      </div>
+
+      <p>Everything — your fixed deposits, your Provident Fund, your mutual funds, your equity portfolio — fits inside
+        that final five percent. And all of it is concentrated in a single country's economic future. Not because India
+        is a bad bet. But because <mark>concentration is a risk, regardless of how good the underlying asset is</mark>.
+      </p>
+
+      <p>Think about that for a moment. A Japanese investor in 1988 felt equally certain about his country's future. The
+        fundamentals looked strong. The growth story was compelling. And yet.</p>
+    </div>
+
+    <!-- SECTION 4 -->
+    <div class="section-block">
+      <span class="section-number">§ 04 — Open Questions About India</span>
+      <h2>Five Things That Keep <em>Me Thinking</em></h2>
+
+      <p>None of this is a prediction of doom for India. I am personally optimistic about this country's trajectory. But
+        intellectual honesty demands acknowledging the open questions — the variables that could significantly alter the
+        growth story.</p>
+
+      <p><strong style="color:var(--cream);">The demographic dividend or demographic trap?</strong> India has an
+        enormous youth population. The narrative is that as these young people enter the workforce, they will earn,
+        spend, and drive consumption. That story is powerful — but it depends entirely on whether enough jobs are
+        created. If artificial intelligence continues displacing white-collar work, if manufacturing doesn't scale fast
+        enough, if unemployment climbs, that demographic dividend can quickly become social pressure: frustrated young
+        people, civil unrest, and a consumption economy that never ignites.</p>
+
+      <p><strong style="color:var(--cream);">Valuation risk.</strong> Indian markets are not cheap. For every rupee of
+        earnings generated by a listed Indian company, investors are currently paying around twenty-three to twenty-four
+        rupees — a Price-to-Earnings ratio that makes India among the more expensive emerging markets. By comparison,
+        Brazil trades at roughly nine times, South Korea at eleven, and China at around fifteen. The premium is
+        explainable, but it is real. And when markets are expensive, the margin of safety shrinks.</p>
+
+      <p><strong style="color:var(--cream);">Foreign investor behaviour.</strong> Over the past eighteen months or so,
+        foreign institutional investors have been consistently selling Indian equities — and domestic retail investors
+        have been absorbing those outflows, buying steadily. This dynamic keeps markets supported, but it also raises a
+        question: what happens if domestic retail sentiment turns? Markets need both domestic and foreign participants
+        to stay balanced.</p>
+
+      <p><strong style="color:var(--cream);">Regional inequality.</strong> India is not a monolith. Karnataka's GDP per
+        capita sits around four times that of states like Uttar Pradesh. Five states contribute nearly fifty percent of
+        national GDP. Roughly 350 million people — about 35 crore — remain in environments where economic participation
+        is still severely constrained. Until that changes, the consumption story has a meaningful structural ceiling.
+      </p>
+
+      <p><strong style="color:var(--cream);">Currency erosion.</strong> The rupee has roughly halved against the dollar
+        over the last twenty years — from around 45 to approaching 90. This is not a surprise; it reflects structural
+        inflation differentials. But for a domestic investor, it means that even a flat return on a dollar-denominated
+        asset would have doubled in rupee terms simply due to currency movement. Every year you keep wealth entirely in
+        rupees, you forgo this hedge.</p>
+    </div>
+
+    <!-- SECTION 5 -->
+    <div class="section-block">
+      <span class="section-number">§ 05 — The Case for Geographic Diversification</span>
+      <h2>Independent Markets, <em>Uncorrelated Returns</em></h2>
+
+      <p>Here is a fact that surprises most people: the correlation between India's Nifty 50 and the US S&amp;P 500 is
+        approximately 0.34. In plain English — these two indices are largely independent of each other. When the S&amp;P
+        500 rises, the Nifty 50 does not necessarily follow. When Indian markets correct, American markets may be
+        indifferent. Sixty-six percent of the time, they behave as distinct, unrelated systems.</p>
+
+      <div class="pull-quote">
+        <p>A portfolio that owns only one country's markets is not a diversified portfolio. It is a concentrated bet
+          dressed up as investing.</p>
+      </div>
+
+      <p>This independence is the mathematical foundation of diversification. If your Indian portfolio and your global
+        portfolio don't move in lockstep, owning both reduces the volatility of your total wealth without proportionally
+        reducing your expected returns. That's the core of modern portfolio theory — and it applies just as powerfully
+        to geography as it does to sectors.</p>
+
+      <p>No country has dominated global stock market performance for twenty-five consecutive years. The leader rotates.
+        In the years that India underperforms — and there will be such years — a portion of your portfolio in the US, or
+        in other markets, will compensate. The reverse is equally true.</p>
+    </div>
+
+    <!-- SECTION 6 -->
+    <div class="section-block">
+      <span class="section-number">§ 06 — How to Actually Do It</span>
+      <h2>Practical Paths to <em>Global Exposure</em></h2>
+
+      <p>The good news is that accessing global markets has never been simpler for an Indian investor. There are two
+        broad routes.</p>
+
+      <p><strong style="color:var(--cream);">Direct international investing.</strong> You can open an account with
+        platforms that allow you to invest directly in US equities and funds under the Liberalised Remittance Scheme
+        (LRS), which permits remitting up to $250,000 per year abroad. This gives you direct dollar exposure and
+        ownership of foreign assets.</p>
+
+      <p><strong style="color:var(--cream);">International ETFs listed in India.</strong> For those who prefer to stay
+        within the domestic market framework, several fund houses now offer internationally-focused funds. Motilal
+        Oswal's NASDAQ 100 Fund of Fund, for instance, has delivered annualised returns in the range of thirty to
+        thirty-five percent over a five-year window. Their NASDAQ Q50 ETF and other international ETFs allow you to tap
+        specific segments of global markets — US technology, international mid-caps, and so on — without remitting money
+        abroad. These are still rupee-denominated products, but they give you economic exposure to foreign earnings and
+        assets.</p>
+
+      <p>Neither path is a silver bullet. Both carry their own tax treatment, costs, and risks. But the point is that
+        the tools exist. Geographic diversification is no longer a privilege reserved for the wealthy or the
+        sophisticated.</p>
+    </div>
+
+    <!-- SECTION 7 -->
+    <div class="section-block">
+      <span class="section-number">§ 07 — Patriotism and Portfolio Management</span>
+      <h2>Smart Money <em>Is</em> Patriotic Money</h2>
+
+      <p>Here is where I want to be direct, because this is the part that gets muddled in a lot of conversations about
+        investing in India.</p>
+
+      <p>Investing exclusively in India is not patriotism. It is concentration risk wearing a flag. True love for your
+        country — if we are going to use that language — is expressed not by where you invest, but by how much you
+        contribute to the economy. Pay your taxes. Spend your money here. Build businesses here. Employ people here.</p>
+
+      <p>My definition of patriotism in finance is simple: how much can I earn, sitting in this country, so that I spend
+        more here, pay more in taxes here, and grow with this country? The goal is to accumulate enough wealth —
+        globally diversified, intelligently managed — that the bulk of my consumption happens right here, in India. That
+        is a more meaningful contribution to national prosperity than putting a hundred percent of my savings into
+        domestic mutual funds and calling it deshbhakti.</p>
+
+      <p>You don't have to choose between smart investing and loving India. The two are not in conflict. What is in
+        conflict is the instinct to confuse loyalty with concentration — and to mistake a limited financial worldview
+        for virtue.</p>
+    </div>
+
+    <!-- Ornament -->
+    <div class="ornament-rule"><span>◆</span></div>
+
+    <!-- CONCLUSION -->
+    <div class="conclusion-box">
+      <span class="section-number" style="margin-bottom:8px;">Summary</span>
+      <h2>Conclusion</h2>
+      <ul class="conclusion-list">
+        <li>Japan's Nikkei 225 took 34 years to recover from its 1989 peak — investors who entered at the top earned
+          just 1.1% annually. No country's dominance is permanent, no matter how inevitable it looks.</li>
+        <li>China's growth story has materially slowed — Evergrande's collapse, demographic decline, and falling birth
+          rates all signal that the "inevitable superpower" narrative was premature.</li>
+        <li>Brazil's BRIC promise evaporated within a decade — GDP per capita nearly halved between 2011 and 2020, and
+          the currency lost more than half its value against the dollar.</li>
+        <li>Indian household wealth is dangerously concentrated: 77% in real estate, 11% in gold, and only 5% in all
+          financial instruments combined — almost all of it tied to a single country's future.</li>
+        <li>India is just 4% of global market capitalisation. Investing only domestically means ignoring 96% of the
+          world's opportunity set.</li>
+        <li>The Nifty 50 and S&P 500 have a correlation of only 0.34 — they largely move independently, which means
+          owning both genuinely reduces portfolio risk.</li>
+        <li>The rupee has depreciated from ~₹45 to ~₹90 per dollar over 20 years. Dollar-denominated assets have
+          structurally outperformed in rupee terms, even at flat nominal returns.</li>
+        <li>Indian markets trade at a P/E of roughly 23–24x, making them significantly more expensive than Brazil (~9x),
+          South Korea (~11x), or China (~15x). Higher valuations compress future return potential.</li>
+        <li>International ETFs (e.g., Motilal Oswal NASDAQ 100, NASDAQ Q50) offer a practical, India-domiciled route to
+          global diversification, with five-year annualised returns of 30–35%.</li>
+        <li>True financial patriotism is earning well, paying taxes honestly, and spending in India — not concentrating
+          all your savings in domestic assets and calling it loyalty.</li>
+      </ul>
+    </div>
+
+    <!-- REFERENCES -->
+    <div class="references-section">
+      <h3>Citations &amp; References</h3>
+      <ol class="ref-list">
+        <li>Nikkei 225 historical data: <em>Japan Exchange Group (JPX), Nikkei Inc.</em> — Peak of 38,915 recorded on 29
+          December 1989; subsequent 82% drawdown and 34-year recovery to 2024.</li>
+        <li>World's largest companies by market capitalisation (1989 vs. 2024): <em>Fortune Global 500 historical
+            archives; Visual Capitalist, "The Biggest Companies in the World" (2024).</em></li>
+        <li>Centre for Economics and Business Research (CEBR): <em>"World Economic League Table 2021"</em> — predicted
+          China to surpass the US as the world's largest economy by 2028.</li>
+        <li>Evergrande collapse: <em>Reuters; Bloomberg News</em> — China Evergrande Group filed for Chapter 15
+          bankruptcy protection in the United States in August 2023, following its 2021 default.</li>
+        <li>China birth rate data: <em>National Bureau of Statistics of China (NBS)</em> — 2024 birth report; 7.92
+          million births recorded for 2025 projection based on NBS trend data.</li>
+        <li>Brazil GDP per capita: <em>World Bank Open Data</em> — GDP per capita (current USD): Brazil, 2011–2020
+          series. USD/BRL exchange rate: <em>Banco Central do Brasil</em>.</li>
+        <li>India household asset allocation: <em>Reserve Bank of India (RBI) — Household Finance Committee Report; RBI
+            Annual Report, Financial Assets and Liabilities of Indian Households.</em></li>
+        <li>India share of global market cap (~4%): <em>World Federation of Exchanges (WFE); NSE India Market
+            Statistics, 2024.</em></li>
+        <li>Nifty 50 / S&P 500 correlation: Computed from monthly return data; cited in <em>SEBI research papers on
+            cross-market linkages and in Mirae Asset India research notes (2023–2024).</em></li>
+        <li>INR/USD depreciation (₹45 → ₹90): <em>Reserve Bank of India reference rate historical series,
+            2004–2024.</em></li>
+        <li>India P/E ratio vs. peers: <em>NSE Nifty 50 P/E data; MSCI Emerging Markets Index valuations; Bloomberg
+            Terminal, as of Q1 2025.</em></li>
+        <li>Motilal Oswal NASDAQ 100 FoF and NASDAQ Q50 ETF performance: <em>Motilal Oswal Asset Management Company
+            (MOAMC) — fund factsheets, five-year returns as of March 2025.</em></li>
+        <li>Liberalised Remittance Scheme (LRS): <em>Reserve Bank of India, Master Direction — Liberalised Remittance
+            Scheme (Updated 2024).</em> Annual limit: USD 250,000 per individual.</li>
+        <li>India's regional GDP inequality: <em>NITI Aayog State Statistics; MoSPI State Domestic Product data,
+            2023–24.</em></li>
+      </ol>
+    </div>
+
+  </div><!-- /.article-body -->
+
+  <!-- FOOTER -->
+  <footer class="article-footer">
+    <p class="footer-note">This article is for informational purposes only and does not constitute investment
+      advice.<br>Past returns of any index or fund are not indicative of future performance.</p>
+    <span class="footer-tag">Investing · Global Markets · India</span>
+  </footer>
+
+</div><!-- /.customOuterWrapper -->
