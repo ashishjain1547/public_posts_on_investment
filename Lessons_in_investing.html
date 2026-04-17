@@ -158,6 +158,19 @@
 <span class="customLink toggleBtn">Toggle All Sections</span>
 <br>
 <br>
+<h3 class="customTEDTalksOnPersonalFinanceAndInvestingHeader" id="customTEDTalksOnPersonalFinanceAndInvestingHeader">
+    <span class="arrow up"></span> TED Talks on Personal Finance and Investing</h3>
+<div id="customTEDTalksOnPersonalFinanceAndInvesting">
+    <ol>
+        <li>
+            <a href="https://survival8.blogspot.com/2026/04/from-being-broke-to-being-aware-ted.html" target="_blank">
+                From Being Broke to Being Aware
+            </a>
+        </li>
+    </ol>
+</div>
+
+
 <h3 class="customPostsByAnkurWarikooHeader" id="customPostsByAnkurWarikooHeader"><span class="arrow up"></span> Videos by Ankur Warikoo</h3>
 <div id="customPostsByAnkurWarikoo">
     <ol>
@@ -565,6 +578,12 @@
 </div>
 
 <script>
+
+    $('h3.customTEDTalksOnPersonalFinanceAndInvestingHeader').click(function () {
+        $("div#customTEDTalksOnPersonalFinanceAndInvesting").fadeToggle();
+        $("h3.customTEDTalksOnPersonalFinanceAndInvestingHeader > .arrow").toggleClass('up').toggleClass('down');
+    });
+
     $('h3.customPostsByAnkurWarikooHeader').click(function () {
         $("div#customPostsByAnkurWarikoo").fadeToggle();
         $("h3.customPostsByAnkurWarikooHeader > .arrow").toggleClass('up').toggleClass('down');
