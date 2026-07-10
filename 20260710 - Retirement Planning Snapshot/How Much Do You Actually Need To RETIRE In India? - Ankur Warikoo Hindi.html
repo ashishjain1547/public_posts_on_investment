@@ -1,0 +1,359 @@
+<iframe class="custom_iframe" src="https://www.youtube.com/embed/apTTVY1EDUA" frameborder="0" allowfullscreen></iframe>
+<head>
+    <script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Google AdSense Using Machine Learning Code -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3071098372371409",
+            enable_page_level_ads: true
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+                $.ajax({
+                        url: "https://raw.githubusercontent.com/ashishjain1547/bookSummariesAndReviews/main/links_to_book_clubs.json",
+                        success: function (result) {
+                                let grouplink = JSON.parse(result)['current book club'];
+                                $("#customWhatsAppGroupLinkWrapper").html(
+                                        `
+                <h2 class="custom_link_h2"><a href="${grouplink}" target="_blank"> 
+                    <span>Join us on:</span>
+                    <span class="customLink"><i class="fa fa-whatsapp"></i> Whatsapp </span>
+                    </a>
+                </h2>
+                `
+                                );
+                        }
+                });
+        });
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        pre {
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .customLink {
+            background-color: #4CAF50;
+            border: none;
+            color: white !important;
+            padding: 8px 13px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .customLink:hover {
+            text-decoration: none;
+        }
+
+        div.code-block-decoration.footer {
+            display: none;
+        }
+
+        button.export-sheets-button-wrapper {
+            display: none;
+        }
+    </style>
+
+    <style>
+        .custom_link_h2 a {
+            color: black;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .custom_link_h2 a:hover {
+            color: black;
+        }
+
+        .custom_link_h2 a:active {
+            color: black;
+        }
+
+        .custom_link_h2 span {
+            translate: 0px -5px;
+            display: inline-block;
+        }
+
+        .custom_link_h2 img {
+            width: 100px;
+            padding: 0px;
+            border: none;
+            box-shadow: none;
+        }
+    </style>
+    <style>
+        .customul {
+            list-style: none;
+        }
+
+        [aria-hidden='true'] {
+            display: none;
+        }
+
+        .custom_iframe {
+            width: 100%;
+            height: 305px;
+        }
+
+        div.customOuterWrapper i.ib {
+            color: #58a6ff;
+        }
+
+        div.customOuterWrapper i.ig {
+            color: #3fb950;
+        }
+
+        div.customOuterWrapper .customTable td {
+            padding: 2px;
+        }
+
+        div.customOuterWrapper ol {
+            display: block;
+            list-style-type: decimal;
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+            padding-inline-start: 18px;
+            unicode-bidi: isolate;
+        }
+
+        div.customOuterWrapper ol li p {
+            padding: 0px;
+            margin: 0px;
+            display: inline;
+        }
+    </style>
+    <style>
+        /* ========== DARK THEME — Blog Content Wrapper ========== */
+        div.customOuterWrapper {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 2rem 2.5rem;
+            border-radius: 10px;
+            line-height: 1.85;
+            max-width: 860px;
+            margin: 0 auto;
+        }
+
+        div.customOuterWrapper h1 {
+            color: #f0c040;
+            font-size: 1.9rem;
+            border-bottom: 2px solid #30363d;
+            padding-bottom: 0.5rem;
+            margin-top: 1.5rem;
+        }
+        div.customOuterWrapper h2 {
+            color: #e3b341;
+            font-size: 1.4rem;
+            margin-top: 1.8rem;
+        }
+        div.customOuterWrapper h3,
+        div.customOuterWrapper h4 {
+            color: #d4a72c;
+        }
+
+        div.customOuterWrapper p {
+            margin: 1rem 0;
+        }
+
+        div.customOuterWrapper a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+        div.customOuterWrapper a:hover {
+            text-decoration: underline;
+        }
+
+        div.customOuterWrapper strong,
+        div.customOuterWrapper b {
+            color: #f0c040;
+        }
+
+        div.customOuterWrapper ul {
+            padding-left: 1.5rem;
+            margin: 0.8rem 0;
+        }
+        div.customOuterWrapper li {
+            margin: 0.4rem 0;
+        }
+
+        div.customOuterWrapper blockquote {
+            border-left: 4px solid #f0c040;
+            margin: 1.2rem 0;
+            padding: 0.6rem 1.2rem;
+            background: #161b22;
+            border-radius: 0 6px 6px 0;
+            font-style: italic;
+        }
+
+        /* ---- Table Styles ---- */
+        div.customOuterWrapper table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 1.2rem 0;
+            font-size: 0.95rem;
+        }
+        div.customOuterWrapper thead {
+            background-color: #1a2332;
+        }
+        div.customOuterWrapper th {
+            color: #f0c040;
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 2px solid #30363d;
+        }
+        div.customOuterWrapper td {
+            padding: 8px 12px;
+            border-bottom: 1px solid #21262d;
+        }
+        div.customOuterWrapper tr:hover {
+            background-color: #161b22;
+        }
+
+        /* ---- Video embed ---- */
+        div.video-embed {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 768px) {
+            div.customOuterWrapper {
+                padding: 1.2rem;
+                font-size: 14px;
+                border-radius: 4px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.5rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.2rem;
+            }
+            .custom_iframe {
+                height: 220px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            div.customOuterWrapper {
+                padding: 0.8rem;
+                font-size: 13px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.3rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.1rem;
+            }
+            .custom_iframe {
+                height: 180px;
+            }
+        }
+    </style>
+
+</head>
+
+<div id="customWhatsAppGroupLinkWrapper"></div>
+
+<a class="customLink" href="https://survival8.blogspot.com/2025/05/lessons-in-investing.html#customPostsByAnkurWarikooHeader" target="_blank">See All Articles on Investing by Ankur Warikoo</a>
+
+&nbsp;&nbsp;
+
+<a href="https://github.com/ashishjain1547/pubML/blob/main/e24_retirement%20planner/Retirement%20planner.xlsx" target="_blank" class="customLink">Download Retirement Planner</a>
+
+<br>
+
+<div class="customOuterWrapper">
+
+<h1>The 40 Crore Retirement Bomb: Is Sandeep Jethwani’s Math Right or Are We All Doomed?</h1>
+
+<p>A few days ago, a clip from a podcast featuring wealth management veteran Sandeep Jethwani went viral for all the wrong reasons. The host, Sonia Shenoy, asked a simple question that haunts every middle-class professional: “I am 40 years old, my monthly expenses are roughly 2 lakh rupees. What retirement corpus do I need if I retire at 60?” Sandeep thought for a moment and dropped a bombshell — 40 crore rupees. Sonia, visibly stunned, clarified: “This is excluding my own house, car, everything. Just liquid corpus.” He doubled down. The internet erupted. Memes flooded social media. “South Bombay elites are so out of touch,” people cried. “Forty crore suna hai? Chillar hai kya?”</p>
+
+<p>But here’s the thing. Sandeep Jethwani is no Instagram finfluencer chasing clicks. He has spent decades in wealth management, much of it at IIFL Wealth, a reputable firm. He co-founded Deserve, a SEBI-registered portfolio management company that today oversees assets worth approximately 16,000 crore rupees. He sits on SEBI working groups and is widely regarded as an authority on wealth management in India. So if he says 40 crore, he isn’t shooting from the hip. There is a mathematical spine behind that terrifying number, and it deserves a closer look — not to scare us into giving up, but to understand what it really takes to retire comfortably in India.</p>
+
+<h2>Why 9% Inflation Is Not a Conspiracy</h2>
+
+<p>The first pillar of Sandeep’s calculation is an inflation rate of 9%. Many of us instinctively scoff because the government’s official Consumer Price Index (CPI) inflation hovers around 5-6%. But CPI is a blunt instrument. Its basket gives heavy weightage to food grains — something urban households spend a shrinking portion of their income on. Meanwhile, expenses that dominate an urban professional’s life — healthcare, education, travel, and lifestyle — are racing ahead at brutal speeds.</p>
+
+<p>Consider healthcare. The cost of a routine surgery or even a diagnostic test has been inflating at 12-14% annually. That single grey hair you spot can double your health-related spending every five to six years. Education, especially in private institutions, has become a bottomless pit. Even government-school seats are scarcer as aspirants multiply. Travel costs, dining out, utilities — all are marching upward. Independent lifestyle inflation easily touches 9-10% per year. So while the official number might soothe us, the lived reality of an urban earner is much harsher. Sandeep’s 9% is not alarmist; it is painfully grounded.</p>
+
+<h2>The Brutal Arithmetic of 40 Crore</h2>
+
+<p>Let’s crunch the numbers that Sandeep likely ran in his head. Monthly expense today: 2 lakh rupees. Inflate this by 9% per year for 20 years. By the time this 40-year-old person reaches 60, their monthly expense will balloon to roughly 11.2 lakh rupees per month — that’s over 1.34 crore rupees annually. Now assume a lifespan of 90 years (urban life expectancy is climbing), giving a retirement period of 30 years. Multiply 1.34 crore by 30, and you get 40.2 crore. Simple, terrifying, done.</p>
+
+<p>But that calculation assumes two very rigid things. First, that you withdraw the entire 30-year corpus on day one of retirement and stash it under the mattress earning zero returns. Second, that your expenses will remain perfectly indexed to 9% inflation forever, with no flexibility. Both are absurd. No sensible retirement plan works that way. To find out whether 40 crore is the absolute truth or a deeply exaggerated warning, we need to build a real-world model that mirrors how people actually save and invest.</p>
+
+<h2>What a Retirement Plan Actually Looks Like</h2>
+
+<p>When you design a retirement strategy, three elements interlock: accumulation, taxation, and decumulation.</p>
+
+<p><strong>Accumulation:</strong> You don’t just plonk all savings into a single fixed deposit. A working professional’s portfolio spans fixed-income instruments, large-cap funds, mid-cap, and small-cap stocks. The mix changes with age and risk appetite.</p>
+
+<p><strong>Taxation:</strong> The government’s hand is always present. Long-term capital gains on equity are taxed at 12.5% today, but may climb. FD interest still attracts slab-rate tax. A prudent plan factors these outflows.</p>
+
+<p><strong>Decumulation:</strong> The most underrated piece. When you retire, you don’t sell every investment. You keep the bulk of your corpus invested, drawing only what you need each year — say a year’s worth of expenses — while the rest continues to compound. This arbitrage is the magic that keeps many a retirement from collapsing prematurely.</p>
+
+<h2>Modeling a Real Retirement: The 25-Year-Old Starting Fresh</h2>
+
+<p>Let’s simulate a 25-year-old with no existing savings, investing Rs 10,000 a month, stepping up the SIP by 5% each year until retirement at 60. The asset allocation during the working years: 10% in fixed-income (assuming 7% pre-tax returns), 40% in large-cap mutual funds (12%), 30% in mid-cap (15%), and 20% in small-cap (18%). We’ll apply a 30% tax on fixed-income gains and 20% on equity gains — deliberately conservative to future-proof the math.</p>
+
+<p>Post-retirement, the allocation shifts toward safety: 50% fixed-income, 50% large-cap equity. The assumed inflation stays at 9%. The goal is to fund a monthly expense of Rs 1 lakh in today’s terms (which inflates accordingly) until age 85.</p>
+
+<p>With the Rs 10,000 monthly SIP, the corpus at age 60 lands around 11.33 crore. Sounds massive. But the first year’s withdrawal — about 92 lakh rupees — quickly eats into it. Because the younger you had stopped contributing, the corpus peaks at withdrawal and then starts declining. At age 77, the money runs out completely. Not good.</p>
+
+<p>Now, nudge the SIP to Rs 15,000 a month. The retirement corpus jumps. And because the remaining amount keeps growing even as you withdraw, the money never hits zero. At age 85, you still have about 26.6 crore left. That’s the power of a slightly higher saving rate and continued compounding during retirement.</p>
+
+<p>What if the 25-year-old takes more risk? Change the working-age allocation to 30% each in large, mid, and small-cap, with 10% fixed-income. Returns improve over the long haul, pushing the corpus higher and making the decumulation even smoother. Same conclusion: small tweaks in saving rate or asset mix drastically alter the outcome.</p>
+
+<h2>So What About the 40-Year-Old with 2 Lakh Expenses?</h2>
+
+<p>Now, let’s apply the same logic to the original question. The 40-year-old has monthly expenses of Rs 2 lakh today. We’ll assume they’ve been investing Rs 50,000 a month (a 25% savings rate on a Rs 2 lakh income) and will continue doing so, stepping up annually by 5%, until 60. With the aggressive 9% inflation, their required first-year withdrawal at retirement would be about 1.34 crore (monthly expense of 11.2 lakh).</p>
+
+<p>Running the numbers, this person would retire with roughly 28.5 crore. But here’s the kicker — that corpus gets exhausted around age 84-85. Not 90. The 40 crore that Sandeep mentioned was for a 30-year retirement funded entirely upfront; our more realistic model shows a deficit even at 28.5 crore.</p>
+
+<p>Now, amp up the monthly investment to Rs 2 lakh. Perhaps the person’s income has grown, or they’ve cut flab from expenses. At that saving rate, the retirement corpus touches about 35 crore. And because the decumulation phase keeps the remainder invested, the plan survives comfortably past age 90, leaving roughly 14 crore behind. That’s a fully funded, no-sweat retirement. Notice, the gap between 35 crore and 40 crore is not massive. Sandeep’s ballpark, while blunt, isn’t from a different galaxy.</p>
+
+<h2>So, Do We All Just Give Up and Head to the Himalayas?</h2>
+
+<p>Not yet. The exercise reveals a deeper truth: the single most powerful lever to secure a comfortable retirement is not just timely SIPs or picking the next multibagger stock. It is income growth. If you earn less than Rs 50,000 a month, no investment wizardry can catapult you out of your current orbit. You must focus relentlessly on upskilling, moving into high-growth areas like technology, AI, or entrepreneurship. A salaried professional has a ceiling; a business owner, if successful, has none. The 40 crore figure is not a stick to beat yourself with — it’s a mirror that reflects both the power of inflation and the necessity of earning more.</p>
+
+<p>For those already in the Rs 1 lakh to Rs 2 lakh monthly club, the math says: try to invest at least 20% of your income now. But as your income rises — and it likely will — lock in a higher percentage. If you’re earning Rs 4 lakh a month, a 25% saving rate pumps Rs 1 lakh into your portfolio each month. That’s the difference between scraping through and flourishing. The rule of thumb isn’t a fixed rupee figure; it’s about stretching your savings rate when you can, knowing that lifestyle inflation is your silent enemy. Fight the urge to let your expenses gallop at 9% while your savings trot at 5%.</p>
+
+<h2>Citations and References</h2>
+
+<ul>
+ <li>Sandeep Jethwani’s background: Co-founder of Deserve, ex-IIFL Wealth; SEBI working group member; assets under management approximately 16,000 crore. (Publicly available through SEBI filings and media interviews.)</li>
+ <li>Inflation data: Official CPI figures from Ministry of Statistics and Programme Implementation, India, consistently hover around 5-6% in recent years. However, sectoral inflation — healthcare at 12-14% and education at 10-12% — is documented in various RBI reports and industry white papers.</li>
+ <li>Long-term asset class returns: Fixed-income returns taken as 7% based on historical FD and PPF rates; large-cap equity at 12%, mid-cap at 15%, small-cap at 18% approximate long-term Nifty indices data (Nifty 50 TRI, Nifty Midcap 150 TRI, Nifty Smallcap 250 TRI) over 15-20 year periods.</li>
+ <li>Tax assumptions: Long-term capital gains tax on equity currently 12.5% (as per Finance Act 2024); conservative 20% used for forward projection. Fixed-income gains taxed at slab rate, assumed 30% for high earners.</li>
+</ul>
+
+<h2>Conclusion: What Should You Do Now?</h2>
+
+<ul>
+ <li>The 40 crore number is not a hoax; it’s a worst-case scenario if you ignore post-retirement compounding and assume rigid 9% inflation forever. In reality, a well-managed portfolio needs less — but still a formidable sum.</li>
+ <li>Inflation is personal. Track your own lifestyle inflation honestly. For urban professionals, 9% is more real than CPI’s 6%.</li>
+ <li>Start early, and if you haven’t, start now. A 25-year-old with a modest SIP can build a retirement fortress. A 40-year-old can still reach it with higher savings or income growth.</li>
+ <li>Asset allocation matters. A diversified mix of equity and debt, adjusted as you age, with a systematic withdrawal strategy, dramatically stretches your corpus.</li>
+ <li>Your earning capacity is your greatest asset. Invest in skills, side hustles, or business ventures that can break the ceiling on your monthly income.</li>
+ <li>Don’t obsess over the absolute rupee target. Focus on the percentage of income you save. As earnings rise, let the savings rate rise too.</li>
+ <li>Use the spreadsheet linked in resources to play out your own scenario. Numbers change lives when they become personal.</li>
+</ul>
+
+<p>Forty crore may sound like a cruel joke, but it’s a wake-up call wrapped in shock value. The path to retirement security isn’t about hitting a magic number; it’s about understanding the math and taking action today — with whatever you have, wherever you are.</p>
+</div>
